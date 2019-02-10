@@ -2,12 +2,12 @@ ship = SR03-A Bolt
 version = 1.3.1
 description = 
 type = VAB
-size = 2.89104795,10.9635258,2.89104843
+size = 2.89104819,10.9635258,2.89104819
 PART
 {
 	part = RP0probeSounding0-3m_4286307300
 	partName = PartTapIn
-	pos = 0.00512009859,10.4364738,0.0132128
+	pos = 0.00512009859,9.82397842,0.0132127404
 	attPos = 0,0,0
 	attPos0 = 0.00512009859,10.4364738,0.0132128
 	rot = 0,0,5.02837594E-08,-1
@@ -1023,7 +1023,7 @@ PART
 {
 	part = RFTank-I_4286298386
 	partName = PartTapIn
-	pos = 0.00512016611,11.3309698,0.0132128
+	pos = 0.00512016611,10.7184744,0.0132127404
 	attPos = 0,0.439489365,0
 	attPos0 = 0,0.530004501,0
 	rot = 0,0,5.02837594E-08,-1
@@ -1058,7 +1058,7 @@ PART
 		name = ProceduralPart
 		isEnabled = True
 		tempColliderCenter = (0, 0, 0)
-		tempColliderSize = (1.62493312, 2.13651943, 1.6500001)
+		tempColliderSize = (1.6500001, 1.85000062, 1.6500001)
 		textureSet = WACCorporal
 		shapeName = Smooth Cone
 		moduleCost = 0.021797467
@@ -1945,7 +1945,7 @@ PART
 {
 	part = RFTank-I_4279998544
 	partName = PartTapIn
-	pos = 0.00511979917,7.75647402,0.0132128
+	pos = 0.00511979917,7.1439786,0.0132127404
 	attPos = 0,0,0
 	attPos0 = 0,-2.5300045,0
 	rot = 0,0,5.02837594E-08,-1
@@ -1986,7 +1986,7 @@ PART
 		name = ProceduralPart
 		isEnabled = True
 		tempColliderCenter = (0, 0, 0)
-		tempColliderSize = (1.62493289, 5.5865202, 1.6500001)
+		tempColliderSize = (1.6500001, 5.30000019, 1.6500001)
 		textureSet = German
 		shapeName = Cylinder
 		moduleCost = 0.108454019
@@ -2825,7 +2825,7 @@ PART
 {
 	part = Bumper.Engine_4279955212
 	partName = PartTapIn
-	pos = 0.00511939265,3.41584492,0.0132128
+	pos = 0.00511939265,2.80334949,0.0132127404
 	attPos = 0,0,0
 	attPos0 = 0,-3.69062901,0
 	rot = 0,0,5.02837594E-08,-1
@@ -3099,9 +3099,9 @@ PART
 		operatingTime = 0
 		lastMET = 0
 		initialized = False
-		currentFlightData = 0
-		initialFlightData = 0
-		missionStartTime = 0
+		currentFlightData = 3000
+		initialFlightData = 3000
+		missionStartTime = 4880996.2697972609
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3450,7 +3450,7 @@ PART
 {
 	part = Bumper.Fin_4279898400
 	partName = PartTapIn
-	pos = -0.483907908,3.39886999,0.502239943
+	pos = -0.483907908,2.78637457,0.502239883
 	attPos = 0,0,0
 	attPos0 = 0.489027321,-0.0169744492,-0.489027292
 	rot = 0.0357985608,-0.923391283,-0.00538858818,0.382149249
@@ -3644,7 +3644,7 @@ PART
 {
 	part = Bumper.Fin_4279896854
 	partName = PartTapIn
-	pos = -0.483907908,3.39886999,-0.475814521
+	pos = -0.483907908,2.78637457,-0.475814581
 	attPos = 0,0,0
 	attPos0 = -0.489027262,-0.0169744492,-0.489027321
 	rot = 0.0291236844,-0.923156559,0.0215031598,-0.382715881
@@ -3838,7 +3838,7 @@ PART
 {
 	part = Bumper.Fin_4279896778
 	partName = PartTapIn
-	pos = 0.494146764,3.39887047,0.502240062
+	pos = 0.494146764,2.78637505,0.502240002
 	attPos = 0,0,0
 	attPos0 = -0.489027321,-0.0169744492,0.489027321
 	rot = 0.0215031244,-0.382715911,-0.0291237775,0.923156559
@@ -4032,7 +4032,7 @@ PART
 {
 	part = Bumper.Fin_4279896702
 	partName = PartTapIn
-	pos = 0.494146675,3.39887047,-0.475814492
+	pos = 0.494146675,2.78637505,-0.475814551
 	attPos = 0,0,0
 	attPos0 = 0.489027262,-0.0169744492,0.489027262
 	rot = -0.00538855279,0.382149309,-0.035798654,0.923391223
@@ -4226,7 +4226,7 @@ PART
 {
 	part = sensorThermometer_4275426934
 	partName = PartTapIn
-	pos = 0.00511975447,7.75647402,0.0132128
+	pos = 0.00511973957,7.1439786,0.0132127404
 	attPos = 0,0,0
 	attPos0 = -7.26431608E-08,0,0
 	rot = 2.77596943E-15,5.0790252E-08,-5.02837594E-08,1
@@ -4462,7 +4462,7 @@ PART
 {
 	part = sensorBarometer_4275422080
 	partName = PartTapIn
-	pos = 0.00511981407,7.75647402,0.0132128
+	pos = 0.00511979917,7.1439786,0.0132127404
 	attPos = 0,0,0
 	attPos0 = 0,0,0
 	rot = -5.02837381E-08,-0.999999583,-0.000958216668,-4.45447568E-11
@@ -4698,7 +4698,7 @@ PART
 {
 	part = launchClamp1_4275155272
 	partName = PartTapIn
-	pos = 0.00511940103,4.68657207,-1.6167084
+	pos = 0.00511938147,4.07407665,-1.61670852
 	attPos = 0,0,0
 	attPos0 = -1.45286322E-07,-3.06990147,-1.6299212
 	rot = 2.27353892E-15,4.52141791E-08,-5.02837594E-08,1
@@ -4733,8 +4733,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.05416203
-		height = 5.17750359
+		scaleFactor = 1.8111558
+		height = 4.56500816
 		stagingEnabled = True
 		towerRot = -5.02837594E-08,-1,-4.47151192E-15,-8.89255674E-08
 		EVENTS
@@ -4941,7 +4941,7 @@ PART
 {
 	part = launchClamp1_4275155002
 	partName = PartTapIn
-	pos = 0.00511963945,4.68657207,1.643134
+	pos = 0.00511964411,4.07407665,1.64313388
 	attPos = 0,0,0
 	attPos0 = 2.86847353E-07,-3.06990147,1.6299212
 	rot = 5.02837594E-08,1,4.91560113E-15,-8.89255674E-08
@@ -4976,8 +4976,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.05416203
-		height = 5.17750359
+		scaleFactor = 1.8111558
+		height = 4.56500816
 		stagingEnabled = True
 		towerRot = 7.11357412E-15,1.32636956E-07,-5.02837594E-08,-1
 		EVENTS

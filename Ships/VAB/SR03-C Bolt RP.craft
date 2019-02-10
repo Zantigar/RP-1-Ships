@@ -2,7 +2,7 @@ ship = SR03-C Bolt RP
 version = 1.3.1
 description = 
 type = VAB
-size = 2.89104915,11.3580856,2.89104891
+size = 2.89104915,10.9635258,2.89104891
 PART
 {
 	part = RP0probeSounding0-3m_4286307300
@@ -1873,7 +1873,7 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 200.00000298023224
+			amount = 2000
 			maxAmount = 2000
 		}
 		UPGRADESAPPLIED
@@ -1932,7 +1932,7 @@ PART
 	RESOURCE
 	{
 		name = SoundingPayload
-		amount = 200.00000298023224
+		amount = 2000
 		maxAmount = 2000
 		flowState = True
 		isTweakable = True
@@ -1967,13 +1967,13 @@ PART
 	modSize = 0,0,0
 	link = sensorThermometer_4275426934
 	link = sensorBarometer_4275422080
-	link = RC.stack_4273555150
 	link = launchClamp1_4275155272
 	link = launchClamp1_4272394100
 	link = GooExperiment_4271145348
 	link = GooExperiment_4271145238
+	link = Bumper.Engine_4279955212
 	attN = top,RP0probeSounding0-3m_4286307300
-	attN = bottom,RC.stack_4273555150
+	attN = bottom,Bumper.Engine_4279955212
 	EVENTS
 	{
 	}
@@ -3297,14 +3297,14 @@ PART
 }
 PART
 {
-	part = RC.stack_4273555150
+	part = launchClamp1_4275155272
 	partName = PartTapIn
-	pos = 0.00511953281,4.90918922,0.0132128
+	pos = 0.00511934701,4.53158855,-1.61636531
 	attPos = 0,0,0
-	attPos0 = 1.66794791E-08,-2.81440496,0
-	rot = 0,0,0,1
+	attPos0 = -1.63694295E-07,-3.22488546,-1.62957811
+	rot = -1.86918022E-15,-5.69823051E-08,5.02837594E-08,-1
 	attRot = 0,0,0,1
-	attRot0 = 0,0,-5.02837594E-08,-1
+	attRot0 = -9.96104393E-16,5.69823051E-08,0,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -3313,15 +3313,14 @@ PART
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 0
-	sepI = -1
-	attm = 0
-	modCost = 193.399994
-	modMass = -0.0144603699
+	sqor = 1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
 	modSize = 0,0,0
-	link = Bumper.Engine_4279955212
-	attN = top,RFTank-I_4279998544
-	attN = bottom,Bumper.Engine_4279955212
+	sym = launchClamp1_4272394100
+	srfN = srfAttach,RFTank-I_4279998544
 	EVENTS
 	{
 	}
@@ -3333,88 +3332,21 @@ PART
 	}
 	MODULE
 	{
-		name = RealChuteModule
+		name = LaunchClamp
 		isEnabled = True
-		caseMass = 0.0719999969
-		cutSpeed = 0.5
-		timer = 0
-		mustGoDown = True
-		deployOnGround = False
-		spareChutes = 5
-		initiated = True
-		wait = True
-		armed = False
-		oneWasDeployed = False
-		staged = False
-		launched = False
-		chuteCount = 5
+		scaleFactor = 1.99267256
+		height = 5.02252007
 		stagingEnabled = True
+		towerRot = 5.02837594E-08,1,4.06715321E-15,1.00693697E-07
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			ActionDeploy
-			{
-				actionGroup = Custom05
-			}
-			ActionCut
-			{
-				actionGroup = Custom06
-			}
-			ActionArm
-			{
-				actionGroup = None
-				active = False
-			}
-			ActionDisarm
+			ReleaseClamp
 			{
 				actionGroup = None
 			}
-		}
-		PARACHUTE
-		{
-			material = Silk
-			preDeployedDiameter = 2.5
-			deployedDiameter = 49.4000015
-			minIsPressure = False
-			capOff = False
-			minDeployment = 2500
-			minPressure = 0.00999999978
-			deploymentAlt = 1000
-			cutAlt = -1
-			preDeploymentSpeed = 2
-			deploymentSpeed = 6
-			time = 0
-			parachuteName = RC_canopy
-			baseParachuteName = RC_canopy
-			capName = cap2
-			preDeploymentAnimation = RC_chute_semi_deploy
-			deploymentAnimation = RC_chute_full_deploy
-			forcedOrientation = 20
-			depState = STOWED
-		}
-		PARACHUTE
-		{
-			material = Nylon
-			preDeployedDiameter = 0.899999976
-			deployedDiameter = 1.79999995
-			minIsPressure = False
-			capOff = False
-			minDeployment = 6000
-			minPressure = 0.00999999978
-			deploymentAlt = 4000
-			cutAlt = 1500
-			preDeploymentSpeed = 1
-			deploymentSpeed = 3
-			time = 0
-			parachuteName = RC_canopy2
-			baseParachuteName = RC_canopy2
-			capName = cap
-			preDeploymentAnimation = RC_chute2_semi_deploy
-			deploymentAnimation = RC_chute2_full_deploy
-			forcedOrientation = 20
-			depState = STOWED
 		}
 		UPGRADESAPPLIED
 		{
@@ -3422,26 +3354,48 @@ PART
 	}
 	MODULE
 	{
-		name = ProceduralChute
+		name = ModuleGenerator
 		isEnabled = True
-		caseId = 0
-		lastCaseId = 0
-		size = 1
-		lastSize = 1
-		planets = 0
-		presetId = 0
-		originalSize = (1, 1, 1)
-		top = 0.164399996
-		bottom = -0.164399996
-		debut = 1
-		initiated = True
-		mustGoDown = True
-		deployOnGround = False
-		secondaryChute = True
-		timer = 0s
-		cutSpeed = 0.5
-		spares = 5
-		landingAlt = 0
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣005Chute‣006Cut Chute‣007Trig Sci (rep)‣008Bio 1‣009Bio 2‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3449,53 +3403,439 @@ PART
 		ACTIONS
 		{
 		}
-		CHUTE
+		UPGRADESAPPLIED
 		{
-			chuteID = 0
-			modelID = 1
-			typeID = 0
-			lastTypeID = 0
-			position = 0.00511953281,4.90918922,-0.495787203
-			isPressure = False
-			calcSelect = True
-			getMass = True
-			useDry = True
-			preDepDiam = 2.5
-			depDiam = 49.4
-			predepClause = 2500
-			mass = 10
-			landingSpeed = 6
-			deceleration = 10
-			refDepAlt = 700
-			chuteCount = 1
-			deploymentAlt = 1000
-			cutAlt = 
-			preDepSpeed = 2
-			depSpeed = 6
 		}
-		CHUTE
+	}
+	MODULE
+	{
+		name = RefuelingPump
+		isEnabled = True
+		enablePump = True
+		pump_rate = 100
+		stagingEnabled = True
+		EVENTS
 		{
-			chuteID = 1
-			modelID = 0
-			typeID = 1
-			lastTypeID = 1
-			position = 0.00511953281,4.90918922,0.522212803
-			isPressure = False
-			calcSelect = True
-			getMass = True
-			useDry = True
-			preDepDiam = 0.9
-			depDiam = 1.8
-			predepClause = 6000
-			mass = 10
-			landingSpeed = 150
-			deceleration = 10
-			refDepAlt = 700
-			chuteCount = 1
-			deploymentAlt = 4000
-			cutAlt = 1500
-			preDepSpeed = 1
-			depSpeed = 3
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRTAntennaPassive
+		isEnabled = True
+		IsRTAntenna = True
+		IsRTActive = True
+		IsRTPowered = True
+		IsRTBroken = False
+		RTDishCosAngle = 1
+		RTOmniRange = 5000
+		RTDishRange = -1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		hibernation = False
+		hibernateOnWarp = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+			}
+			HibernateToggle
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = launchClamp1_4272394100
+	partName = PartTapIn
+	pos = 0.0051196469,4.53158855,1.64279091
+	attPos = 0,0,0
+	attPos0 = 3.06157943E-07,-3.22488546,1.62957811
+	rot = -5.02837594E-08,-1,-6.05936157E-15,1.00693697E-07
+	attRot = 0,0,0,1
+	attRot0 = 0,1,9.9610397E-16,-1.00693697E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = launchClamp1_4275155272
+	srfN = srfAttach,RFTank-I_4279998544
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.99267256
+		height = 5.02252007
+		stagingEnabled = True
+		towerRot = -8.25733457E-15,-1.44405078E-07,5.02837594E-08,1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣005Chute‣006Cut Chute‣007Trig Sci (rep)‣008Bio 1‣009Bio 2‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = RefuelingPump
+		isEnabled = True
+		enablePump = True
+		pump_rate = 100
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRTAntennaPassive
+		isEnabled = True
+		IsRTAntenna = True
+		IsRTActive = True
+		IsRTPowered = True
+		IsRTBroken = False
+		RTDishCosAngle = 1
+		RTOmniRange = 5000
+		RTDishRange = -1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		hibernation = False
+		hibernateOnWarp = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+			}
+			HibernateToggle
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = GooExperiment_4271145348
+	partName = PartTapIn
+	pos = 0.00511998544,10.0445251,-0.719368815
+	attPos = 0,0,0
+	attPos0 = 6.37286419E-08,2.28805113,-0.732581615
+	rot = 2.21674663E-15,4.5195911E-08,5.02837594E-08,-1
+	attRot = 0,0,0,1
+	attRot0 = 5.58736813E-17,-4.5195911E-08,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = GooExperiment_4271145238
+	srfN = srfAttach,RFTank-I_4279998544
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3522,23 +3862,14 @@ PART
 		}
 		ACTION
 		{
-			group = 6
-			groupName = Cut Chute
+			group = 9
+			groupName = Bio 2
 			activated = 0
-			partModule = RealChuteModule
-			actionGuiName = Cut main chute
-			actionName = ActionCut
+			partModule = ModuleScienceExperiment
+			actionGuiName = Observe Bio Sample
+			actionName = DeployAction
 			pmIndex = 0
-		}
-		ACTION
-		{
-			group = 5
-			groupName = Chute
-			activated = 0
-			partModule = RealChuteModule
-			actionGuiName = Deploy chute
-			actionName = ActionDeploy
-			pmIndex = 0
+			custom1 = RP0-bioScan1
 		}
 		UPGRADESAPPLIED
 		{
@@ -3607,14 +3938,265 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleConnectedLivingSpace
+		name = ModuleScienceExperiment
 		isEnabled = True
-		passable = True
-		passableWhenSurfaceAttached = False
-		surfaceAttachmentsPassable = False
-		passablenodes = 
-		impassablenodes = 
-		spaceName = Parachute - Stack (Double)
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = Custom09
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTagInstruments
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = GooExperiment_4271145238
+	partName = PartTapIn
+	pos = 0.00512003945,10.0445251,0.745794415
+	attPos = 0,0,0
+	attPos0 = 3.98706845E-10,2.28805113,0.732581615
+	rot = -5.02837594E-08,-1,1.30521067E-16,-1.48452273E-09
+	attRot = 0,0,0,1
+	attRot0 = 0,1,-5.58736813E-17,1.48452273E-09
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = GooExperiment_4271145348
+	srfN = srfAttach,RFTank-I_4279998544
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣005Chute‣006Cut Chute‣007Trig Sci (rep)‣008Bio 1‣009Bio 2‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 8
+			groupName = Bio 1
+			activated = 0
+			partModule = ModuleScienceExperiment
+			actionGuiName = Observe Bio Sample
+			actionName = DeployAction
+			pmIndex = 0
+			custom1 = RP0-bioScan1
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = Custom08
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTagInstruments
+		isEnabled = True
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3665,17 +4247,17 @@ PART
 {
 	part = Bumper.Engine_4279955212
 	partName = PartTapIn
-	pos = 0.00511953281,3.02128506,0.0132128
+	pos = 0.00511953281,3.41584492,0.0132128
 	attPos = 0,0,0
-	attPos0 = 1.42108547E-14,-1.88790417,0
+	attPos0 = 1.70168022E-07,-4.3406291,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attRot0 = 0,0,-5.02837594E-08,-1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
@@ -3689,7 +4271,9 @@ PART
 	link = Bumper.Fin_4279896854
 	link = Bumper.Fin_4279896778
 	link = Bumper.Fin_4279896702
-	attN = top,RC.stack_4273555150
+	link = parachuteRadial_4290230998
+	link = parachuteRadial_4290230724
+	attN = top,RFTank-I_4279998544
 	EVENTS
 	{
 	}
@@ -4290,7 +4874,7 @@ PART
 {
 	part = Bumper.Fin_4279898400
 	partName = PartTapIn
-	pos = -0.483907759,3.00431013,0.502239943
+	pos = -0.483907759,3.39886999,0.502239943
 	attPos = 0,0,0
 	attPos0 = 0.489027321,-0.0169744492,-0.489027292
 	rot = -0.0357986055,0.923391283,0.00538856909,-0.382149249
@@ -4300,7 +4884,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
@@ -4484,7 +5068,7 @@ PART
 {
 	part = Bumper.Fin_4279896854
 	partName = PartTapIn
-	pos = -0.483907759,3.00431013,-0.475814521
+	pos = -0.483907759,3.39886999,-0.475814521
 	attPos = 0,0,0
 	attPos0 = -0.489027262,-0.0169744492,-0.489027321
 	rot = -0.029123731,0.923156559,-0.0215031411,0.382715881
@@ -4494,7 +5078,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
@@ -4678,7 +5262,7 @@ PART
 {
 	part = Bumper.Fin_4279896778
 	partName = PartTapIn
-	pos = 0.494146913,3.00431061,0.502240062
+	pos = 0.494146913,3.39887047,0.502240062
 	attPos = 0,0,0
 	attPos0 = -0.489027321,-0.0169744492,0.489027321
 	rot = -0.021503143,0.382715911,0.029123731,-0.923156559
@@ -4688,7 +5272,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
@@ -4872,7 +5456,7 @@ PART
 {
 	part = Bumper.Fin_4279896702
 	partName = PartTapIn
-	pos = 0.494146824,3.00431061,-0.475814492
+	pos = 0.494146824,3.39887047,-0.475814492
 	attPos = 0,0,0
 	attPos0 = 0.489027262,-0.0169744492,0.489027262
 	rot = 0.00538857188,-0.382149309,0.0357986093,-0.923391223
@@ -4882,7 +5466,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
@@ -5064,516 +5648,30 @@ PART
 }
 PART
 {
-	part = launchClamp1_4275155272
+	part = parachuteRadial_4290230998
 	partName = PartTapIn
-	pos = 0.00511934701,4.53158855,-1.61636531
+	pos = -0.722193062,4.05535841,0.0132128438
 	attPos = 0,0,0
-	attPos0 = -1.63694295E-07,-3.22488546,-1.62957811
-	rot = -1.86918022E-15,-5.69823051E-08,5.02837594E-08,-1
+	attPos0 = -0.727312505,0.639513552,4.3772161E-08
+	rot = -0.0248456486,0.706670165,0.0248456486,0.706670165
 	attRot = 0,0,0,1
-	attRot0 = -9.96104393E-16,5.69823051E-08,0,1
+	attRot0 = -0.0248456486,0.706670165,0.0248456486,0.706670165
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
-	sidx = 0
-	sqor = 1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = launchClamp1_4272394100
-	srfN = srfAttach,RFTank-I_4279998544
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = LaunchClamp
-		isEnabled = True
-		scaleFactor = 1.99267256
-		height = 5.02252007
-		stagingEnabled = True
-		towerRot = 5.02837594E-08,1,4.06715321E-15,1.00693697E-07
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ReleaseClamp
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGenerator
-		isEnabled = True
-		generatorIsActive = False
-		throttle = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				active = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣005Chute‣006Cut Chute‣007Trig Sci (rep)‣008Bio 1‣009Bio 2‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = RefuelingPump
-		isEnabled = True
-		enablePump = True
-		pump_rate = 100
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleRTAntennaPassive
-		isEnabled = True
-		IsRTAntenna = True
-		IsRTActive = True
-		IsRTPowered = True
-		IsRTBroken = False
-		RTDishCosAngle = 1
-		RTOmniRange = 5000
-		RTDishRange = -1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCommand
-		isEnabled = True
-		hibernation = False
-		hibernateOnWarp = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			MakeReferenceToggle
-			{
-				actionGroup = None
-			}
-			HibernateToggle
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = launchClamp1_4272394100
-	partName = PartTapIn
-	pos = 0.0051196469,4.53158855,1.64279091
-	attPos = 0,0,0
-	attPos0 = 3.06157943E-07,-3.22488546,1.62957811
-	rot = -5.02837594E-08,-1,-6.05936157E-15,1.00693697E-07
-	attRot = 0,0,0,1
-	attRot0 = 0,1,9.9610397E-16,-1.00693697E-07
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 1
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = launchClamp1_4275155272
-	srfN = srfAttach,RFTank-I_4279998544
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = LaunchClamp
-		isEnabled = True
-		scaleFactor = 1.99267256
-		height = 5.02252007
-		stagingEnabled = True
-		towerRot = -8.25733457E-15,-1.44405078E-07,5.02837594E-08,1
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ReleaseClamp
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGenerator
-		isEnabled = True
-		generatorIsActive = False
-		throttle = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				active = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣005Chute‣006Cut Chute‣007Trig Sci (rep)‣008Bio 1‣009Bio 2‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = RefuelingPump
-		isEnabled = True
-		enablePump = True
-		pump_rate = 100
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleRTAntennaPassive
-		isEnabled = True
-		IsRTAntenna = True
-		IsRTActive = True
-		IsRTPowered = True
-		IsRTBroken = False
-		RTDishCosAngle = 1
-		RTOmniRange = 5000
-		RTDishRange = -1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCommand
-		isEnabled = True
-		hibernation = False
-		hibernateOnWarp = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			MakeReferenceToggle
-			{
-				actionGroup = None
-			}
-			HibernateToggle
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = GooExperiment_4271145348
-	partName = PartTapIn
-	pos = 0.005120093,10.0445251,-0.719368815
-	attPos = 0,0,0
-	attPos0 = 6.37286419E-08,2.28805113,-0.732581615
-	rot = 2.21674663E-15,4.5195911E-08,5.02837594E-08,-1
-	attRot = 0,0,0,1
-	attRot0 = 5.58736813E-17,-4.5195911E-08,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
+	sidx = 1
+	sqor = 0
 	sepI = -1
 	attm = 1
-	modCost = 0
-	modMass = 0
+	modCost = 83.0999985
+	modMass = 0.0106499996
 	modSize = 0,0,0
-	sym = GooExperiment_4271145238
-	srfN = srfAttach,RFTank-I_4279998544
+	sym = parachuteRadial_4290230724
+	srfN = srfAttach,Bumper.Engine_4279955212
 	EVENTS
 	{
 	}
@@ -5585,24 +5683,29 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleAnimateGeneric
+		name = ModuleTransform2Value
 		isEnabled = True
-		aniState = LOCKED
-		animSwitch = True
-		animTime = 0
-		animSpeed = 1
-		deployPercent = 100
-		animationIsDisabled = False
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTransform2Value
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -5629,14 +5732,53 @@ PART
 		}
 		ACTION
 		{
-			group = 9
+			group = 5
 			groupName = 
 			activated = 0
-			partModule = ModuleScienceExperiment
-			actionGuiName = Observe Bio Sample
-			actionName = DeployAction
+			partModule = RealChuteModule
+			actionGuiName = Deploy chute
+			actionName = ActionDeploy
 			pmIndex = 0
-			custom1 = RP0-bioScan1
+		}
+		ACTION
+		{
+			group = 6
+			groupName = 
+			activated = 0
+			partModule = RealChuteModule
+			actionGuiName = Cut chute
+			actionName = ActionCut
+			pmIndex = 0
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -5705,25 +5847,66 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleScienceExperiment
+		name = RealChuteModule
 		isEnabled = True
-		Deployed = False
-		Inoperable = False
-		cooldownToGo = 0
+		caseMass = 0.00999999978
+		cutSpeed = 0.5
+		timer = 0
+		mustGoDown = False
+		deployOnGround = False
+		spareChutes = 5
+		initiated = True
+		wait = True
+		armed = False
+		oneWasDeployed = False
+		staged = False
+		launched = False
+		chuteCount = 5
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			DeployAction
+			ActionDeploy
 			{
-				actionGroup = Custom09
+				actionGroup = Custom05
 			}
-			ResetAction
+			ActionCut
+			{
+				actionGroup = Custom06
+			}
+			ActionArm
+			{
+				actionGroup = None
+				active = False
+			}
+			ActionDisarm
 			{
 				actionGroup = None
 			}
+		}
+		PARACHUTE
+		{
+			material = Nylon
+			preDeployedDiameter = 1.20000005
+			deployedDiameter = 23
+			minIsPressure = False
+			capOff = False
+			minDeployment = 8000
+			minPressure = 0.00999999978
+			deploymentAlt = 1000
+			cutAlt = -1
+			preDeploymentSpeed = 2
+			deploymentSpeed = 6
+			time = 0
+			parachuteName = canopy
+			baseParachuteName = canopy
+			capName = cap
+			preDeploymentAnimation = semiDeployLarge
+			deploymentAnimation = fullyDeployLarge
+			forcedOrientation = 0
+			depState = STOWED
 		}
 		UPGRADESAPPLIED
 		{
@@ -5731,14 +5914,56 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleTagInstruments
+		name = ProceduralChute
 		isEnabled = True
+		caseId = -1
+		lastCaseId = -1
+		size = 0
+		lastSize = 0
+		planets = 0
+		presetId = 0
+		originalSize = (1, 1, 1)
+		top = 0
+		bottom = 0
+		debut = 1
+		initiated = True
+		mustGoDown = False
+		deployOnGround = False
+		secondaryChute = False
+		timer = 0s
+		cutSpeed = 0.5
+		spares = 5
+		landingAlt = 0
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
+		}
+		CHUTE
+		{
+			chuteID = 0
+			modelID = 0
+			typeID = 0
+			lastTypeID = 0
+			position = 0.276781827,7.54050589,8.91356182
+			isPressure = False
+			calcSelect = True
+			getMass = True
+			useDry = True
+			preDepDiam = 0.7
+			depDiam = 17
+			predepClause = 8000
+			mass = 10
+			landingSpeed = 8
+			deceleration = 10
+			refDepAlt = 700
+			chuteCount = 2
+			deploymentAlt = 1000
+			cutAlt = 
+			preDepSpeed = 2
+			depSpeed = 6
 		}
 		UPGRADESAPPLIED
 		{
@@ -5781,30 +6006,30 @@ PART
 }
 PART
 {
-	part = GooExperiment_4271145238
+	part = parachuteRadial_4290230724
 	partName = PartTapIn
-	pos = 0.00512002967,10.0445251,0.745794415
+	pos = 0.732432067,4.05535841,0.0132126929
 	attPos = 0,0,0
-	attPos0 = 3.98706845E-10,2.28805113,0.732581615
-	rot = -5.02837594E-08,-1,1.30521067E-16,-1.48452273E-09
+	attPos0 = 0.727312624,0.639513433,-1.07102096E-07
+	rot = 0.0248456504,0.706670105,0.0248456467,-0.706670225
 	attRot = 0,0,0,1
-	attRot0 = 0,1,-5.58736813E-17,1.48452273E-09
+	attRot0 = 0.0248456504,0.706670105,0.0248456467,-0.706670225
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = -1
+	istg = 0
 	resPri = 0
 	dstg = 0
-	sidx = -1
-	sqor = -1
+	sidx = 1
+	sqor = 0
 	sepI = -1
 	attm = 1
-	modCost = 0
+	modCost = 83.0999985
 	modMass = 0
 	modSize = 0,0,0
-	sym = GooExperiment_4271145348
-	srfN = srfAttach,RFTank-I_4279998544
+	sym = parachuteRadial_4290230998
+	srfN = srfAttach,Bumper.Engine_4279955212
 	EVENTS
 	{
 	}
@@ -5816,24 +6041,29 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleAnimateGeneric
+		name = ModuleTransform2Value
 		isEnabled = True
-		aniState = LOCKED
-		animSwitch = True
-		animTime = 0
-		animSpeed = 1
-		deployPercent = 100
-		animationIsDisabled = False
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTransform2Value
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -5860,14 +6090,53 @@ PART
 		}
 		ACTION
 		{
-			group = 8
+			group = 5
 			groupName = 
 			activated = 0
-			partModule = ModuleScienceExperiment
-			actionGuiName = Observe Bio Sample
-			actionName = DeployAction
+			partModule = RealChuteModule
+			actionGuiName = Deploy chute
+			actionName = ActionDeploy
 			pmIndex = 0
-			custom1 = RP0-bioScan1
+		}
+		ACTION
+		{
+			group = 6
+			groupName = 
+			activated = 0
+			partModule = RealChuteModule
+			actionGuiName = Cut chute
+			actionName = ActionCut
+			pmIndex = 0
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -5936,25 +6205,66 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleScienceExperiment
+		name = RealChuteModule
 		isEnabled = True
-		Deployed = False
-		Inoperable = False
-		cooldownToGo = 0
+		caseMass = 0.00999999978
+		cutSpeed = 0.5
+		timer = 0
+		mustGoDown = False
+		deployOnGround = False
+		spareChutes = 5
+		initiated = True
+		wait = True
+		armed = False
+		oneWasDeployed = False
+		staged = False
+		launched = False
+		chuteCount = 5
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			DeployAction
+			ActionDeploy
 			{
-				actionGroup = Custom08
+				actionGroup = Custom05
 			}
-			ResetAction
+			ActionCut
+			{
+				actionGroup = Custom06
+			}
+			ActionArm
+			{
+				actionGroup = None
+				active = False
+			}
+			ActionDisarm
 			{
 				actionGroup = None
 			}
+		}
+		PARACHUTE
+		{
+			material = Nylon
+			preDeployedDiameter = 1.20000005
+			deployedDiameter = 23
+			minIsPressure = False
+			capOff = False
+			minDeployment = 8000
+			minPressure = 0.00999999978
+			deploymentAlt = 1000
+			cutAlt = -1
+			preDeploymentSpeed = 2
+			deploymentSpeed = 6
+			time = 0
+			parachuteName = canopy
+			baseParachuteName = canopy
+			capName = cap
+			preDeploymentAnimation = semiDeployLarge
+			deploymentAnimation = fullyDeployLarge
+			forcedOrientation = 0
+			depState = STOWED
 		}
 		UPGRADESAPPLIED
 		{
@@ -5962,14 +6272,56 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleTagInstruments
+		name = ProceduralChute
 		isEnabled = True
+		caseId = -1
+		lastCaseId = -1
+		size = 0
+		lastSize = 0
+		planets = 0
+		presetId = 0
+		originalSize = (1, 1, 1)
+		top = 0
+		bottom = 0
+		debut = 1
+		initiated = True
+		mustGoDown = False
+		deployOnGround = False
+		secondaryChute = False
+		timer = 0s
+		cutSpeed = 0.5
+		spares = 5
+		landingAlt = 0
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
+		}
+		CHUTE
+		{
+			chuteID = 0
+			modelID = 0
+			typeID = 0
+			lastTypeID = 0
+			position = 0.796249509,3.92882037,0.0132126855
+			isPressure = False
+			calcSelect = True
+			getMass = True
+			useDry = True
+			preDepDiam = 0.7
+			depDiam = 17
+			predepClause = 8000
+			mass = 10
+			landingSpeed = 8
+			deceleration = 10
+			refDepAlt = 700
+			chuteCount = 2
+			deploymentAlt = 1000
+			cutAlt = 
+			preDepSpeed = 2
+			depSpeed = 6
 		}
 		UPGRADESAPPLIED
 		{
