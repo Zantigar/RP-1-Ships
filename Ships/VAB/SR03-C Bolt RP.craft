@@ -2,7 +2,7 @@ ship = SR03-C Bolt RP
 version = 1.3.1
 description = 
 type = VAB
-size = 2.89104915,10.9635258,2.89104891
+size = 2.89104843,10.9635258,2.89104843
 PART
 {
 	part = RP0probeSounding0-3m_4286307300
@@ -3309,12 +3309,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
 	sqor = 1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3552,12 +3552,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = 0
 	sqor = 1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4257,7 +4257,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = 0
@@ -4884,7 +4884,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = -1
@@ -5078,7 +5078,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = -1
@@ -5272,7 +5272,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = -1
@@ -5466,7 +5466,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = -1
@@ -5663,7 +5663,7 @@ PART
 	istg = 0
 	resPri = 0
 	dstg = 0
-	sidx = 1
+	sidx = 0
 	sqor = 0
 	sepI = -1
 	attm = 1
@@ -5733,7 +5733,7 @@ PART
 		ACTION
 		{
 			group = 5
-			groupName = 
+			groupName = Chute
 			activated = 0
 			partModule = RealChuteModule
 			actionGuiName = Deploy chute
@@ -5743,7 +5743,7 @@ PART
 		ACTION
 		{
 			group = 6
-			groupName = 
+			groupName = Cut Chute
 			activated = 0
 			partModule = RealChuteModule
 			actionGuiName = Cut chute
@@ -5947,13 +5947,13 @@ PART
 			modelID = 0
 			typeID = 0
 			lastTypeID = 0
-			position = 0.276781827,7.54050589,8.91356182
+			position = -0.786010504,3.92882061,0.0132128512
 			isPressure = False
 			calcSelect = True
 			getMass = True
 			useDry = True
-			preDepDiam = 0.7
-			depDiam = 17
+			preDepDiam = 1.2
+			depDiam = 23
 			predepClause = 8000
 			mass = 10
 			landingSpeed = 8
@@ -6021,12 +6021,12 @@ PART
 	istg = 0
 	resPri = 0
 	dstg = 0
-	sidx = 1
+	sidx = 0
 	sqor = 0
 	sepI = -1
 	attm = 1
 	modCost = 83.0999985
-	modMass = 0
+	modMass = 0.0106499996
 	modSize = 0,0,0
 	sym = parachuteRadial_4290230998
 	srfN = srfAttach,Bumper.Engine_4279955212
@@ -6091,7 +6091,7 @@ PART
 		ACTION
 		{
 			group = 5
-			groupName = 
+			groupName = Chute
 			activated = 0
 			partModule = RealChuteModule
 			actionGuiName = Deploy chute
@@ -6101,7 +6101,7 @@ PART
 		ACTION
 		{
 			group = 6
-			groupName = 
+			groupName = Cut Chute
 			activated = 0
 			partModule = RealChuteModule
 			actionGuiName = Cut chute
@@ -6305,13 +6305,13 @@ PART
 			modelID = 0
 			typeID = 0
 			lastTypeID = 0
-			position = 0.796249509,3.92882037,0.0132126855
+			position = 0.796249509,3.92882061,0.0132126855
 			isPressure = False
 			calcSelect = True
 			getMass = True
 			useDry = True
-			preDepDiam = 0.7
-			depDiam = 17
+			preDepDiam = 1.2
+			depDiam = 23
 			predepClause = 8000
 			mass = 10
 			landingSpeed = 8
