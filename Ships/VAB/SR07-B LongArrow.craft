@@ -2,7 +2,7 @@ ship = SR07-B LongArrow
 version = 1.3.1
 description = 
 type = VAB
-size = 4.48203564,18.9648705,4.48203611
+size = 4.48203707,18.9648705,4.48203659
 PART
 {
 	part = RP0probeSounding0-3m_4286307300
@@ -106,6 +106,17 @@ PART
 			actionName = ResetAction
 			pmIndex = 0
 			custom1 = RP0-telemetry1
+		}
+		ACTION
+		{
+			group = 50
+			groupName = 
+			activated = 0
+			partModule = ModuleRangeSafety
+			actionGuiName = Range Safety
+			actionName = BoomAction
+			pmIndex = 0
+			custom1 = NA
 		}
 		UPGRADESAPPLIED
 		{
@@ -1049,6 +1060,7 @@ PART
 		tempColliderCenter = (0, 0, 0)
 		tempColliderSize = (1.6500001, 1.84999871, 1.6500001)
 		textureSet = WACCorporal
+		capTextureIndex = 0
 		shapeName = Smooth Cone
 		moduleCost = 0.021797467
 		stagingEnabled = True
@@ -1123,6 +1135,24 @@ PART
 		topDiameter = 0
 		bottomDiameter = 1.6500001
 		length = 1.85000014
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralShapePolygon
+		isEnabled = True
+		cornerCount = 8
+		diameter = 1.25
+		length = 1
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1951,7 +1981,7 @@ PART
 	sqor = -1
 	sepI = -1
 	attm = 0
-	modCost = 421.587067
+	modCost = 273.464233
 	modMass = 0.424927711
 	modSize = 0,0,0
 	link = KzFlatAdapter_4280811064
@@ -1979,8 +2009,9 @@ PART
 		tempColliderCenter = (0, 0, 0)
 		tempColliderSize = (1.6500001, 14, 1.6500001)
 		textureSet = Checker
+		capTextureIndex = 0
 		shapeName = Cylinder
-		moduleCost = 0.286482304
+		moduleCost = 3.38864756
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2052,6 +2083,24 @@ PART
 		selectedShape = Round #1
 		topDiameter = 0.5
 		bottomDiameter = 1
+		length = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralShapePolygon
+		isEnabled = True
+		cornerCount = 8
+		diameter = 1.25
 		length = 1
 		stagingEnabled = True
 		EVENTS
@@ -5213,10 +5262,10 @@ PART
 {
 	part = winglet_4280825396
 	partName = PartTapIn
-	pos = 0.0186352096,2.3323288,-1.46447396
-	attPos = 0,-1.54973364,0
+	pos = 0.0186352096,4.01468277,-1.46447361
+	attPos = 0.00128638558,-3.67247057,3.57627869E-07
 	attPos0 = -1.09896092E-07,-3.4500041,-1.46195018
-	rot = -0.00617049588,-0.707079828,-0.00617049588,0.707079947
+	rot = 0.00617049541,0.707079828,0.00617049541,-0.707079947
 	attRot = 0.00872639939,-3.21165317E-12,7.3558043E-10,-0.999962032
 	attRot0 = -0.00617049588,-0.707079828,-0.00617049588,0.707079947
 	mir = 1,1,1
@@ -5370,10 +5419,10 @@ PART
 {
 	part = winglet_4292099778
 	partName = PartTapIn
-	pos = -1.44460118,2.3323288,-0.00381023437
-	attPos = 1.1920929E-07,-1.54973388,0
+	pos = -1.44460094,4.01468277,-0.00380939315
+	attPos = 1.1920929E-07,-3.67247081,-0.00128608383
 	attPos0 = -1.46195006,-3.45000386,2.28174031E-08
-	rot = -0.00872639846,8.42936956E-08,0,0.999961972
+	rot = 0.00872639846,-1.28003421E-07,-3.8144421E-10,-0.999961972
 	attRot = 0.00872639939,-3.21165317E-12,7.3558043E-10,-0.999962032
 	attRot0 = 0,-8.42936956E-08,0,-1
 	mir = 1,1,1
@@ -5527,10 +5576,10 @@ PART
 {
 	part = winglet_4292099722
 	partName = PartTapIn
-	pos = 0.01606296,2.3323288,1.4594264
-	attPos = 5.68434189E-14,-1.54973364,0
+	pos = 0.0160629004,4.01468277,1.45942605
+	attPos = -0.00128633901,-3.67247057,-3.57627869E-07
 	attPos0 = 2.38418465E-07,-3.4500041,1.46195018
-	rot = -0.00617049541,0.707080007,0.00617049634,0.707079768
+	rot = 0.00617049541,-0.707079947,-0.00617049541,-0.707079828
 	attRot = -0.00872639939,3.21165317E-12,-7.3558043E-10,-0.999962032
 	attRot0 = 0,-0.707106948,0,-0.707106709
 	mir = 1,1,-1
@@ -5684,8 +5733,8 @@ PART
 {
 	part = winglet_4292099666
 	partName = PartTapIn
-	pos = 1.47929895,2.3323288,-0.0012375362
-	attPos = 1.1920929E-07,-1.5497334,0
+	pos = 1.47929895,4.01468277,-0.0012375362
+	attPos = -1.1920929E-07,-3.67247033,0.0012863857
 	attPos0 = 1.46195006,-3.45000434,-1.96974725E-07
 	rot = 0,0.999961972,0.00872639846,-8.42936956E-08
 	attRot = -0.00872639939,3.21165317E-12,-7.3558043E-10,-0.999962032
