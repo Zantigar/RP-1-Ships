@@ -1,18 +1,18 @@
 ship = SR00-A Flea
 version = 1.3.1
 description = 
-type = VAB
+type = SPH
 size = 6.02621508,3.18125343,6.0262146
 PART
 {
 	part = RP0probeSounding0-3m_4286307300
 	partName = PartTapIn
-	pos = -0.0110872686,2.68206692,0.0185995921
+	pos = -0.0189762712,2.69694829,-0.437031418
 	attPos = 0,0,0
-	attPos0 = -0.0110872686,2.68206692,0.0185995921
+	attPos0 = -0.0189762712,2.69694829,-0.437031418
 	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attRot = -0.707106709,0,0,0.707106709
+	attRot0 = 0.707106769,0,0,0.707106769
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1025,7 +1025,7 @@ PART
 {
 	part = RFTank-I_4286298386
 	partName = PartTapIn
-	pos = -0.0110872686,4.16206264,0.0185995921
+	pos = -0.0189762712,4.17694378,-0.437031418
 	attPos = 0,0,0
 	attPos0 = 0,0.530004501,0
 	rot = 0,0,0,1
@@ -1042,13 +1042,14 @@ PART
 	sqor = -1
 	sepI = -1
 	attm = 0
-	modCost = 3.37158084
+	modCost = 92.8465805
 	modMass = -0.954480767
 	modSize = 0,0,0
 	link = RO-B9ProcWing-Early_4286233450
 	link = RO-B9ProcWing-Early_4291253936
 	link = RO-B9ProcWing-Early_4291253806
 	link = RO-B9ProcWing-Early_4291253676
+	link = launchClamp1_4291932404
 	attN = bottom,RP0probeSounding0-3m_4286307300
 	EVENTS
 	{
@@ -1992,7 +1993,7 @@ PART
 {
 	part = sensorThermometer_4286067260
 	partName = PartTapIn
-	pos = -0.0110872816,2.68206692,0.0185995921
+	pos = -0.0189762842,2.69694829,-0.437031418
 	attPos = 0,0,0
 	attPos0 = -1.3038516E-08,0,0
 	rot = 1.34938247E-08,-3.84175593E-07,-5.18399791E-15,-1
@@ -2228,7 +2229,7 @@ PART
 {
 	part = sensorBarometer_4286065706
 	partName = PartTapIn
-	pos = -0.0110872686,2.68206692,0.0185995921
+	pos = -0.0189762712,2.69694829,-0.437031418
 	attPos = 0,0,0
 	attPos0 = 0,0,0
 	rot = 7.59516487E-15,1,-1.34938309E-08,5.62861999E-07
@@ -2464,7 +2465,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4286233450
 	partName = PartTapIn
-	pos = -0.110035382,2.97220421,-0.0803485215
+	pos = -0.117924385,2.98708558,-0.535979509
 	attPos = 0,0,0
 	attPos0 = -0.0989481136,-0.923166275,-0.0989481062
 	rot = -0.00249979133,0.923876226,-0.00103544735,0.382681966
@@ -3408,7 +3409,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4291253936
 	partName = PartTapIn
-	pos = -0.110035263,2.97220421,0.11754781
+	pos = -0.117924266,2.98708558,-0.338083208
 	attPos = 0,0,0
 	attPos0 = -0.0989481062,-0.923166275,0.0989480987
 	rot = -0.0024997911,0.923876166,0.00103544758,-0.382682115
@@ -4352,7 +4353,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4291253806
 	partName = PartTapIn
-	pos = 0.0878608748,2.97220421,0.117547669
+	pos = 0.0799718723,2.98708558,-0.338083327
 	attPos = 0,0,0
 	attPos0 = 0.0989481211,-0.923166275,0.0989480987
 	rot = -0.00103544723,0.382681936,0.00249979133,-0.923876226
@@ -5296,7 +5297,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4291253676
 	partName = PartTapIn
-	pos = 0.0878608227,2.97220421,-0.0803484991
+	pos = 0.0799718201,2.98708558,-0.535979509
 	attPos = 0,0,0
 	attPos0 = 0.0989480913,-0.923166275,-0.0989481136
 	rot = 0.00103544758,-0.382682115,0.0024997911,-0.923876166
@@ -6240,7 +6241,7 @@ PART
 {
 	part = ROAerobeeSustainer_4286265238
 	partName = PartTapIn
-	pos = -0.0110872686,2.5520668,0.0185995921
+	pos = -0.0189762712,2.56694818,-0.437031418
 	attPos = 0,0,0
 	attPos0 = 0,-0.130000114,0
 	rot = 0,0,0,1
@@ -6260,9 +6261,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = FASAlaunchClamp25_4291716250
 	attN = top,RP0probeSounding0-3m_4286307300
-	attN = bottom,FASAlaunchClamp25_4291716250
 	EVENTS
 	{
 	}
@@ -6979,16 +6978,16 @@ PART
 }
 PART
 {
-	part = FASAlaunchClamp25_4291716250
+	part = launchClamp1_4291932404
 	partName = PartTapIn
-	pos = -0.0110872686,1.04106677,0.0185995921
+	pos = -0.987562001,2.74511838,-0.437031299
 	attPos = 0,0,0
-	attPos0 = 0,-1.51100004,0
-	rot = 0,0,0,1
+	attPos0 = -0.96858573,-1.43182564,1.1920929E-07
+	rot = 0.00457152538,0.707092047,-0.00457152538,0.707092047
 	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attRot0 = 0.00457152538,0.707092047,-0.00457152538,0.707092047
 	mir = 1,1,1
-	symMethod = Radial
+	symMethod = Mirror
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 0
@@ -6997,11 +6996,11 @@ PART
 	sidx = 1
 	sqor = 0
 	sepI = 0
-	attm = 0
+	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,ROAerobeeSustainer_4286265238
+	srfN = srfAttach,RFTank-I_4286298386
 	EVENTS
 	{
 	}
@@ -7015,10 +7014,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.1097424
-		height = 1.97918236
+		scaleFactor = 1.28925979
+		height = 3.24957204
 		stagingEnabled = True
-		towerRot = 0,0,0,1
+		towerRot = -0.00457152538,-0.707091987,-0.00457152538,-0.707092106
 		EVENTS
 		{
 		}
@@ -7027,6 +7026,38 @@ PART
 			ReleaseClamp
 			{
 				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -7058,15 +7089,10 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleRTAntennaPassive
+		name = RefuelingPump
 		isEnabled = True
-		IsRTAntenna = True
-		IsRTActive = True
-		IsRTPowered = True
-		IsRTBroken = False
-		RTDishCosAngle = 1
-		RTOmniRange = 5000
-		RTDishRange = -1
+		enablePump = True
+		pump_rate = 100
 		stagingEnabled = True
 		EVENTS
 		{
@@ -7098,6 +7124,28 @@ PART
 		name = KOSNameTag
 		isEnabled = True
 		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRTAntennaPassive
+		isEnabled = True
+		IsRTAntenna = True
+		IsRTActive = True
+		IsRTPowered = True
+		IsRTBroken = False
+		RTDishCosAngle = 1
+		RTOmniRange = 5000
+		RTDishRange = -1
 		stagingEnabled = True
 		EVENTS
 		{

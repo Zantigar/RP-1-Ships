@@ -2,14 +2,14 @@ ship = SR01-A Cricket
 version = 1.3.1
 description = 
 type = VAB
-size = 6.04611158,5.51877499,6.04611254
+size = 6.04611158,5.81876373,6.04611301
 PART
 {
 	part = RP0probeSounding0-3m_4286307300
 	partName = PartTapIn
-	pos = -0.0110872686,2.68206692,0.0185995921
+	pos = -0.0298699923,5.85079908,0.0800456628
 	attPos = 0,0,0
-	attPos0 = -0.0110872686,2.68206692,0.0185995921
+	attPos0 = -0.0298699923,5.85079908,0.0800456628
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -96,7 +96,7 @@ PART
 			actionGuiName = Discard Telemetry
 			actionName = ResetAction
 			pmIndex = 0
-			custom1 = RP0-telemetry1
+			custom1 = RP0telemetry1
 		}
 		ACTION
 		{
@@ -107,7 +107,7 @@ PART
 			actionGuiName = Analyze Telemetry
 			actionName = DeployAction
 			pmIndex = 0
-			custom1 = RP0-telemetry1
+			custom1 = RP0telemetry1
 		}
 		ACTION
 		{
@@ -1025,7 +1025,7 @@ PART
 {
 	part = RFTank-I_4286298386
 	partName = PartTapIn
-	pos = -0.0110872686,4.16206264,0.0185995921
+	pos = -0.0298699923,7.33079481,0.0800456628
 	attPos = 0,0,0
 	attPos0 = 0,0.530004501,0
 	rot = 0,0,0,1
@@ -1042,7 +1042,7 @@ PART
 	sqor = -1
 	sepI = -1
 	attm = 0
-	modCost = 92.7903061
+	modCost = 3.37158084
 	modMass = -0.954480767
 	modSize = 0,0,0
 	link = RO-B9ProcWing-Early_4286233450
@@ -1066,8 +1066,9 @@ PART
 		tempColliderCenter = (0, 0, 0)
 		tempColliderSize = (0.300000012, 2.89999962, 0.300000012)
 		textureSet = Soyuz
+		capTextureIndex = 0
 		shapeName = Smooth Cone
-		moduleCost = 0.0015647246
+		moduleCost = 0.0578366369
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1140,6 +1141,24 @@ PART
 		topDiameter = 0
 		bottomDiameter = 0.300000012
 		length = 2.9000001
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralShapePolygon
+		isEnabled = True
+		cornerCount = 8
+		diameter = 1.25
+		length = 1
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1973,7 +1992,7 @@ PART
 {
 	part = sensorThermometer_4286067260
 	partName = PartTapIn
-	pos = -0.0110872816,2.68206692,0.0185995921
+	pos = -0.0298700053,5.85079908,0.0800456628
 	attPos = 0,0,0
 	attPos0 = -1.3038516E-08,0,0
 	rot = 1.34938247E-08,-3.84175593E-07,-5.18399791E-15,-1
@@ -2209,7 +2228,7 @@ PART
 {
 	part = sensorBarometer_4286065706
 	partName = PartTapIn
-	pos = -0.0110872686,2.68206692,0.0185995921
+	pos = -0.0298699923,5.85079908,0.0800456628
 	attPos = 0,0,0
 	attPos0 = 0,0,0
 	rot = 7.59516487E-15,1,-1.34938309E-08,5.62861999E-07
@@ -2445,7 +2464,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4286233450
 	partName = PartTapIn
-	pos = -0.110035382,2.97220421,-0.0803485215
+	pos = -0.12881811,6.14093637,-0.0189024508
 	attPos = 0,0,0
 	attPos0 = -0.0989481136,-0.923166275,-0.0989481062
 	rot = -0.00249979133,0.923876226,-0.00103544735,0.382681966
@@ -3320,6 +3339,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -3375,7 +3408,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4291253936
 	partName = PartTapIn
-	pos = -0.110035263,2.97220421,0.11754781
+	pos = -0.12881799,6.14093637,0.178993881
 	attPos = 0,0,0
 	attPos0 = -0.0989481062,-0.923166275,0.0989480987
 	rot = -0.0024997911,0.923876166,0.00103544758,-0.382682115
@@ -4250,6 +4283,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -4305,7 +4352,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4291253806
 	partName = PartTapIn
-	pos = 0.0878608748,2.97220421,0.117547669
+	pos = 0.0690781474,6.14093637,0.178993732
 	attPos = 0,0,0
 	attPos0 = 0.0989481211,-0.923166275,0.0989480987
 	rot = -0.00103544723,0.382681936,0.00249979133,-0.923876226
@@ -5180,6 +5227,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -5235,7 +5296,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4291253676
 	partName = PartTapIn
-	pos = 0.0878608227,2.97220421,-0.0803484991
+	pos = 0.0690781027,6.14093637,-0.0189024284
 	attPos = 0,0,0
 	attPos0 = 0.0989480913,-0.923166275,-0.0989481136
 	rot = 0.00103544758,-0.382682115,0.0024997911,-0.923876166
@@ -6110,6 +6171,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -6165,7 +6240,7 @@ PART
 {
 	part = ROAerobeeSustainer_4286265238
 	partName = PartTapIn
-	pos = -0.0110872686,2.5520668,0.0185995921
+	pos = -0.0298699923,5.72079897,0.0800456628
 	attPos = 0,0,0
 	attPos0 = 0,-0.130000114,0
 	rot = 0,0,0,1
@@ -6179,15 +6254,15 @@ PART
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 1
+	sqor = 2
 	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = proceduralStackDecoupler_4286214620
+	link = taerobee.decoupler_4291699416
 	attN = top,RP0probeSounding0-3m_4286307300
-	attN = bottom,proceduralStackDecoupler_4286214620
+	attN = bottom,taerobee.decoupler_4291699416
 	EVENTS
 	{
 	}
@@ -6904,11 +6979,11 @@ PART
 }
 PART
 {
-	part = proceduralStackDecoupler_4286214620
+	part = taerobee.decoupler_4291699416
 	partName = PartTapIn
-	pos = -0.0110872686,2.34106159,0.0185995921
+	pos = -0.0298699923,5.33979893,0.0800456628
 	attPos = 0,0,0
-	attPos0 = 0,-0.211005211,0
+	attPos0 = 0,-0.381000042,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -6920,11 +6995,11 @@ PART
 	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 0
+	sqor = 1
 	sepI = 0
 	attm = 0
-	modCost = 74.3025894
-	modMass = -0.995386541
+	modCost = 0
+	modMass = 0
 	modSize = 0,0,0
 	link = TinyTim_4286178446
 	attN = top,ROAerobeeSustainer_4286265238
@@ -6940,44 +7015,6 @@ PART
 	}
 	MODULE
 	{
-		name = ProceduralPart
-		isEnabled = True
-		tempColliderCenter = (0, 0, 0)
-		tempColliderSize = (0.340000004, 0.199999809, 0.340000004)
-		textureSet = Nosecone
-		shapeName = Curved
-		moduleCost = 6.99009085
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralShapePill
-		isEnabled = True
-		diameter = 0.300000012
-		length = 0.200000003
-		fillet = 0.0399999991
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleDecouple
 		isEnabled = True
 		ejectionForcePercent = 100
@@ -6989,52 +7026,6 @@ PART
 		ACTIONS
 		{
 			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = DecouplerTweaker
-		isEnabled = True
-		isOmniDecoupler = False
-		ejectionImpulse = 5
-		mass = 0.00461346004
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToggleCrossfeed
-		isEnabled = True
-		crossfeedStatus = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			EnableAction
-			{
-				actionGroup = None
-			}
-			DisableAction
 			{
 				actionGroup = None
 			}
@@ -7129,14 +7120,27 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleToolingGeneric
+		name = ModuleToggleCrossfeed
 		isEnabled = True
+		crossfeedStatus = False
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			EnableAction
+			{
+				actionGroup = None
+			}
+			DisableAction
+			{
+				actionGroup = None
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -7181,9 +7185,9 @@ PART
 {
 	part = TinyTim_4286178446
 	partName = PartTapIn
-	pos = -0.0110872686,0.363056183,0.0185995921
+	pos = -0.0298699923,3.23179889,0.0800456628
 	attPos = 0,0,0
-	attPos0 = 0,-1.97800541,0
+	attPos0 = 0,-2.10800004,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -7194,8 +7198,8 @@ PART
 	istg = 1
 	resPri = 0
 	dstg = 2
-	sidx = 1
-	sqor = 1
+	sidx = 2
+	sqor = 2
 	sepI = 0
 	attm = 0
 	modCost = 0
@@ -7205,7 +7209,9 @@ PART
 	link = RO-B9ProcWing-Early_4286176926
 	link = RO-B9ProcWing-Early_4286176790
 	link = RO-B9ProcWing-Early_4286176654
-	attN = top,proceduralStackDecoupler_4286214620
+	link = FASAlaunchClamp25_4291706574
+	attN = top,taerobee.decoupler_4291699416
+	attN = bottom,FASAlaunchClamp25_4291706574
 	EVENTS
 	{
 	}
@@ -7274,7 +7280,7 @@ PART
 		isEnabled = True
 		type = Solid
 		utilization = 86
-		mass = 0.268000007
+		mass = 0.181437001
 		_numberOfAddedMLILayers = 0
 		partPrevTemperature = -1
 		stagingEnabled = True
@@ -7467,7 +7473,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4286177996
 	partName = PartTapIn
-	pos = 0.098686792,0.633337975,-0.0911744535
+	pos = 0.0799040645,3.50208068,-0.0297283828
 	attPos = 0,0,0
 	attPos0 = 0.109774061,0.270281792,-0.109774046
 	rot = 0,0.382683456,0,0.923879623
@@ -8342,6 +8348,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -8397,7 +8417,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4286176926
 	partName = PartTapIn
-	pos = -0.120861299,0.633337975,-0.0911744684
+	pos = -0.139644027,3.50208068,-0.0297283977
 	attPos = 0,0,0
 	attPos0 = -0.109774031,0.270281792,-0.109774061
 	rot = 0,0.923879564,0,0.382683456
@@ -9272,6 +9292,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -9327,7 +9361,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4286176790
 	partName = PartTapIn
-	pos = -0.120861322,0.633337975,0.128373653
+	pos = -0.139644042,3.50208068,0.189819723
 	attPos = 0,0,0
 	attPos0 = -0.109774053,0.270281792,0.109774053
 	rot = 0,0.923879564,0,-0.382683456
@@ -10202,6 +10236,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -10257,7 +10305,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4286176654
 	partName = PartTapIn
-	pos = 0.0986867771,0.633337975,0.128373638
+	pos = 0.0799040496,3.50208068,0.189819708
 	attPos = 0,0,0
 	attPos0 = 0.109774046,0.270281792,0.109774046
 	rot = 0,0.382683456,0,-0.923879564
@@ -11132,6 +11180,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -11177,6 +11239,199 @@ PART
 		}
 		ACTIONS
 		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = FASAlaunchClamp25_4291706574
+	partName = PartTapIn
+	pos = -0.0298699923,1.83179903,0.0800456628
+	attPos = 0,0,0
+	attPos0 = 0,-1.4000001,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = 1
+	sqor = 2
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,TinyTim_4286178446
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 2.95263648
+		height = 2.76991439
+		stagingEnabled = True
+		towerRot = 0,0,0,1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRTAntennaPassive
+		isEnabled = True
+		IsRTAntenna = True
+		IsRTActive = True
+		IsRTPowered = True
+		IsRTBroken = False
+		RTDishCosAngle = 1
+		RTOmniRange = 5000
+		RTDishRange = -1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		hibernation = False
+		hibernateOnWarp = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+			}
+			HibernateToggle
+			{
+				actionGroup = None
+				active = False
+			}
 		}
 		UPGRADESAPPLIED
 		{

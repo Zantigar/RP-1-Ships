@@ -2,12 +2,12 @@ ship = SR02-A Dart
 version = 1.3.1
 description = 
 type = VAB
-size = 6.02621508,12.6347752,6.0262146
+size = 6.02621508,12.6347761,6.0262146
 PART
 {
 	part = RP0probeSounding0-3m_4286307300
 	partName = PartTapIn
-	pos = -0.0110844066,10.9908895,0.0186014138
+	pos = -0.0110844066,10.9908905,0.0186014138
 	attPos = 0,0,0
 	attPos0 = -0.0110844066,10.8408947,0.0186014138
 	rot = 0,0,0,1
@@ -96,7 +96,7 @@ PART
 			actionGuiName = Discard Telemetry
 			actionName = ResetAction
 			pmIndex = 0
-			custom1 = RP0-telemetry1
+			custom1 = RP0telemetry1
 		}
 		ACTION
 		{
@@ -107,7 +107,7 @@ PART
 			actionGuiName = Analyze Telemetry
 			actionName = DeployAction
 			pmIndex = 0
-			custom1 = RP0-telemetry1
+			custom1 = RP0telemetry1
 		}
 		ACTION
 		{
@@ -1025,7 +1025,7 @@ PART
 {
 	part = RFTank-I_4286298386
 	partName = PartTapIn
-	pos = -0.0110844066,12.4708853,0.0186014138
+	pos = -0.0110844066,12.4708862,0.0186014138
 	attPos = 0,0,0
 	attPos0 = 0,0.530004501,0
 	rot = 0,0,0,1
@@ -1042,7 +1042,7 @@ PART
 	sqor = -1
 	sepI = -1
 	attm = 0
-	modCost = 3.31530905
+	modCost = 3.37158084
 	modMass = -0.954480767
 	modSize = 0,0,0
 	link = RO-B9ProcWing-Early_4286233450
@@ -1066,8 +1066,9 @@ PART
 		tempColliderCenter = (0, 0, 0)
 		tempColliderSize = (0.300000012, 2.89999962, 0.300000012)
 		textureSet = Soyuz
+		capTextureIndex = 0
 		shapeName = Smooth Cone
-		moduleCost = 0.0015647246
+		moduleCost = 0.0578366369
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1140,6 +1141,24 @@ PART
 		topDiameter = 0
 		bottomDiameter = 0.300000012
 		length = 2.9000001
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralShapePolygon
+		isEnabled = True
+		cornerCount = 8
+		diameter = 1.25
+		length = 1
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1973,7 +1992,7 @@ PART
 {
 	part = sensorThermometer_4286067260
 	partName = PartTapIn
-	pos = -0.0110844197,10.9908895,0.0186014138
+	pos = -0.0110844197,10.9908905,0.0186014138
 	attPos = 0,0,0
 	attPos0 = -1.3038516E-08,0,0
 	rot = 1.34938247E-08,-3.84175593E-07,-5.18399791E-15,-1
@@ -2209,7 +2228,7 @@ PART
 {
 	part = sensorBarometer_4286065706
 	partName = PartTapIn
-	pos = -0.0110844066,10.9908895,0.0186014138
+	pos = -0.0110844066,10.9908905,0.0186014138
 	attPos = 0,0,0
 	attPos0 = 0,0,0
 	rot = 7.59516487E-15,1,-1.34938309E-08,5.62861999E-07
@@ -2445,7 +2464,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4286233450
 	partName = PartTapIn
-	pos = -0.110032521,11.2810268,-0.0803467035
+	pos = -0.110032521,11.2810278,-0.0803467035
 	attPos = 0,0,0
 	attPos0 = -0.0989481136,-0.923166275,-0.0989481062
 	rot = -0.00249979133,0.923876226,-0.00103544735,0.382681966
@@ -3320,6 +3339,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -3375,7 +3408,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4291253936
 	partName = PartTapIn
-	pos = -0.110032402,11.2810268,0.117549628
+	pos = -0.110032402,11.2810278,0.117549628
 	attPos = 0,0,0
 	attPos0 = -0.0989481062,-0.923166275,0.0989480987
 	rot = -0.0024997911,0.923876166,0.00103544758,-0.382682115
@@ -4250,6 +4283,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -4305,7 +4352,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4291253806
 	partName = PartTapIn
-	pos = 0.0878637359,11.2810268,0.117549494
+	pos = 0.0878637359,11.2810278,0.117549494
 	attPos = 0,0,0
 	attPos0 = 0.0989481211,-0.923166275,0.0989480987
 	rot = -0.00103544723,0.382681936,0.00249979133,-0.923876226
@@ -5180,6 +5227,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -5235,7 +5296,7 @@ PART
 {
 	part = RO-B9ProcWing-Early_4291253676
 	partName = PartTapIn
-	pos = 0.0878636837,11.2810268,-0.0803466737
+	pos = 0.0878636837,11.2810278,-0.0803466737
 	attPos = 0,0,0
 	attPos0 = 0.0989480913,-0.923166275,-0.0989481136
 	rot = 0.00103544758,-0.382682115,0.0024997911,-0.923876166
@@ -6110,6 +6171,20 @@ PART
 		}
 		TANK
 		{
+			name = Water
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = crewSurvivability
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = Beryllium
 			note = 
 			utilization = 1
@@ -6165,7 +6240,7 @@ PART
 {
 	part = ROAerobeeSustainer_4286265238
 	partName = PartTapIn
-	pos = -0.0110844066,10.8608894,0.0186014138
+	pos = -0.0110844066,10.8608904,0.0186014138
 	attPos = 0,0,0
 	attPos0 = 0,-0.130000114,0
 	rot = 0,0,0,1
@@ -7205,7 +7280,7 @@ PART
 	sqor = -1
 	sepI = 0
 	attm = 0
-	modCost = 72.2915497
+	modCost = 73.3621216
 	modMass = 0.31459403
 	modSize = 0,0,0
 	link = Bumper.Engine_4279955212
@@ -7227,8 +7302,9 @@ PART
 		tempColliderCenter = (0, 0, 0)
 		tempColliderSize = (1.6500001, 5.29999924, 1.64745688)
 		textureSet = German
+		capTextureIndex = 0
 		shapeName = Cylinder
-		moduleCost = 0.108454004
+		moduleCost = 1.17902708
 		stagingEnabled = True
 		EVENTS
 		{
@@ -7300,6 +7376,24 @@ PART
 		selectedShape = Round #1
 		topDiameter = 0.5
 		bottomDiameter = 1
+		length = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralShapePolygon
+		isEnabled = True
+		cornerCount = 8
+		diameter = 1.25
 		length = 1
 		stagingEnabled = True
 		EVENTS
@@ -9747,7 +9841,7 @@ PART
 {
 	part = MainSailorFairingEggWht_4279915228
 	partName = PartTapIn
-	pos = -0.836084425,10.0516901,0.0186014138
+	pos = -0.836084425,10.0516901,0.0186013412
 	attPos = 0,0,0
 	attPos0 = -0.825000048,-0.348199844,-7.21774995E-08
 	rot = 0,1,0,-4.37113883E-08

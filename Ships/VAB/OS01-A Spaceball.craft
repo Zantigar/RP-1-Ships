@@ -2,12 +2,12 @@ ship = OS01-A Spaceball
 version = 1.3.1
 description = PVG pitch 100/1.0; plenty of dV. Stop at stage 3 to align and spin up final stage.
 type = VAB
-size = 9.64556503,25.0127373,9.6455698
+size = 9.64556503,25.0127449,9.6455698
 PART
 {
 	part = SXTSputnik_4282651166
 	partName = PartTapIn
-	pos = 1.83641839E-06,23.7555332,1.30686931E-06
+	pos = 1.83641839E-06,23.7555351,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 1.83641839E-06,23.5845413,1.30686931E-06
 	rot = 0,0,0,1
@@ -1105,7 +1105,7 @@ PART
 {
 	part = RFTank-III_4282634324
 	partName = PartTapIn
-	pos = 1.83641839E-06,22.5401096,1.30686931E-06
+	pos = 1.83641839E-06,22.5401115,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0,-1.0154295,0
 	rot = 0,0,0,1
@@ -2056,7 +2056,7 @@ PART
 {
 	part = ROAerobeeSustainer_4282610034
 	partName = PartTapIn
-	pos = 1.83641839E-06,21.7401028,1.30686931E-06
+	pos = 1.83641839E-06,21.7401047,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0,-0.60000515,0
 	rot = 0,0,0,1
@@ -2797,7 +2797,7 @@ PART
 {
 	part = SXTAntenna_4282493650
 	partName = PartTapIn
-	pos = 1.86371983E-06,23.7680492,-0.296108663
+	pos = 1.86371983E-06,23.7680511,-0.296108663
 	attPos = 0,0,0.0161821842
 	attPos0 = 2.73014482E-08,0.0125160217,-0.312292159
 	rot = -0.0200333223,4.57447911E-08,-9.16604015E-10,-0.999799311
@@ -3037,7 +3037,7 @@ PART
 {
 	part = SXTAntenna_4280805750
 	partName = PartTapIn
-	pos = 1.83500367E-06,23.7680492,0.296111286
+	pos = 1.83500367E-06,23.7680511,0.296111286
 	attPos = -1.41469148E-09,0,-0.0161821842
 	attPos0 = -6.06022428E-16,0.0125160217,0.312292159
 	rot = -4.09196878E-11,-0.999799311,0.0200333223,-2.0421751E-09
@@ -3277,7 +3277,7 @@ PART
 {
 	part = RO-GeigerMuller_4282477928
 	partName = PartTapIn
-	pos = 1.83406371E-06,24.0530834,1.30686931E-06
+	pos = 1.83406371E-06,24.0530853,1.30686931E-06
 	attPos = 0,-0.0137872696,0
 	attPos0 = -2.35462805E-09,0.311337471,0
 	rot = 7.62867325E-10,1,2.38409498E-07,-4.37047269E-08
@@ -3493,7 +3493,7 @@ PART
 {
 	part = KzResizableFairingBaseRing_4282518586
 	partName = PartTapIn
-	pos = 1.83641839E-06,21.3991032,1.30686931E-06
+	pos = 1.83641839E-06,21.3991051,1.30686931E-06
 	attPos = 0,0.0926799774,0
 	attPos0 = 0,-0.295000076,0
 	rot = 0,0,0,1
@@ -3771,7 +3771,7 @@ PART
 {
 	part = RP0probeAvionics0-81m_4280817988
 	partName = PartTapIn
-	pos = 1.83641839E-06,21.2383461,1.30686931E-06
+	pos = 1.83641839E-06,21.238348,1.30686931E-06
 	attPos = 0,0.0892429352,0
 	attPos0 = 0,-0.25,0
 	rot = 0,0,0,1
@@ -4324,7 +4324,7 @@ PART
 {
 	part = RFTank-III_4280966234
 	partName = PartTapIn
-	pos = 1.83641839E-06,20.1470623,1.30686931E-06
+	pos = 1.83641839E-06,20.1470642,1.30686931E-06
 	attPos = 0,0.0837116241,0
 	attPos0 = 0,-0.750004768,0
 	rot = 0,0,0,1
@@ -5287,7 +5287,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279059526
 	partName = PartTapIn
-	pos = 1.81461178E-06,18.8348236,-0.498874605
+	pos = 1.81461178E-06,18.8348255,-0.498874605
 	attPos = 0,-0.0410766602,-0.0179015696
 	attPos0 = -3.11202939E-08,-0.825000763,-0.355974346
 	rot = 0.707106829,0.707106829,5.96046519E-08,-5.96046519E-08
@@ -5297,11 +5297,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -5507,7 +5507,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279057242
 	partName = PartTapIn
-	pos = -0.498874038,18.8348236,2.06413006E-06
+	pos = -0.498874038,18.8348255,2.06413006E-06
 	attPos = -0.0179015696,-0.0410766602,-1.06706466E-09
 	attPos0 = -0.355974317,-0.825000763,9.90257831E-09
 	rot = 0.50000006,0.49999997,-0.49999997,-0.50000006
@@ -5517,11 +5517,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -5727,7 +5727,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279057172
 	partName = PartTapIn
-	pos = 1.8423674E-06,18.8348236,0.498877227
+	pos = 1.8423674E-06,18.8348255,0.498877227
 	attPos = 1.56501301E-09,-0.0410766602,0.0179015696
 	attPos0 = 6.22405878E-08,-0.825000763,0.355974346
 	rot = 2.86960304E-08,-9.05132751E-08,-0.707106829,-0.707106829
@@ -5737,11 +5737,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -5947,7 +5947,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279057102
 	partName = PartTapIn
-	pos = 0.498877734,18.8348236,1.30686931E-06
+	pos = 0.498877734,18.8348255,1.30686931E-06
 	attPos = 0.0179015696,-0.0410766602,-1.06706466E-09
 	attPos0 = 0.355974317,-0.825000763,-5.23380095E-08
 	rot = -0.49999997,-0.50000006,-0.50000006,-0.49999997
@@ -5957,11 +5957,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -6167,7 +6167,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279055674
 	partName = PartTapIn
-	pos = -0.0119551895,18.8323936,-0.499346167
+	pos = -0.0119551895,18.8323956,-0.499346167
 	attPos = -0.00896473415,-0.0426807404,-0.00247237086
 	attPos0 = 3.25135261E-08,-0.825000763,-0.37191093
 	rot = -0.707106829,0.707106829,5.9604659E-08,5.9604659E-08
@@ -6177,11 +6177,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 1
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -6387,7 +6387,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279054916
 	partName = PartTapIn
-	pos = -0.499345601,18.8323936,0.011958532
+	pos = -0.499345601,18.8323956,0.011958532
 	attPos = -0.00247237086,-0.0426807404,0.00896473322
 	attPos0 = -0.3719109,-0.825000763,-5.46810952E-08
 	rot = -0.49999997,0.50000006,0.50000006,-0.49999997
@@ -6397,11 +6397,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 1
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -6607,7 +6607,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279054840
 	partName = PartTapIn
-	pos = 0.0119590256,18.8323936,0.499348789
+	pos = 0.0119590256,18.8323956,0.499348789
 	attPos = 0.00896473415,-0.0426807404,0.00247237086
 	attPos0 = 0,-0.825000763,0.37191093
 	rot = 9.05132822E-08,2.86960375E-08,0.707106829,-0.707106829
@@ -6617,11 +6617,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 1
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -6827,7 +6827,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279054764
 	partName = PartTapIn
-	pos = 0.499349296,18.8323936,-0.0119557232
+	pos = 0.499349296,18.8323956,-0.0119557232
 	attPos = 0.00247237086,-0.0426807404,-0.00896473322
 	attPos0 = 0.3719109,-0.825000763,1.0345957E-08
 	rot = 0.50000006,-0.49999997,0.49999997,-0.50000006
@@ -6837,11 +6837,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 1
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -7047,7 +7047,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279037188
 	partName = PartTapIn
-	pos = -0.490965754,18.8373299,2.05212586E-06
+	pos = -0.490965754,18.8373318,2.05212586E-06
 	attPos = 0.115883917,-0.0394229889,0
 	attPos0 = -0.481851518,-0.825000763,2.87205921E-08
 	rot = 1,0,0,-8.42937027E-08
@@ -7057,11 +7057,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 2
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -7267,7 +7267,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279036386
 	partName = PartTapIn
-	pos = 1.84227315E-06,18.8373299,0.490968883
+	pos = 1.84227315E-06,18.8373318,0.490968883
 	attPos = 6.9072712E-09,-0.0394229889,-0.115883917
 	attPos0 = 0,-0.825000763,0.481851488
 	rot = 0.707106829,-5.96046519E-08,-0.707106829,-5.96046519E-08
@@ -7277,11 +7277,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 2
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -7487,7 +7487,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279036298
 	partName = PartTapIn
-	pos = 0.490969449,18.8373299,1.30686931E-06
+	pos = 0.490969449,18.8373318,1.30686931E-06
 	attPos = -0.115883917,-0.0394229889,1.01309752E-08
 	attPos0 = 0.481851518,-0.825000763,-7.08454309E-08
 	rot = -4.37113883E-08,-8.42937027E-08,-1,3.68459459E-15
@@ -7497,11 +7497,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 2
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -7707,7 +7707,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279036210
 	partName = PartTapIn
-	pos = 1.8149575E-06,18.8373299,-0.49096626
+	pos = 1.8149575E-06,18.8373318,-0.49096626
 	attPos = 6.9072712E-09,-0.0394229889,0.115883917
 	attPos0 = -5.74411843E-08,-0.825000763,-0.481851488
 	rot = -0.707106829,-5.96046519E-08,-0.707106829,5.96046519E-08
@@ -7717,11 +7717,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 2
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -7927,7 +7927,7 @@ PART
 {
 	part = RO-RealEngines-S2.253_4275799700
 	partName = PartTapIn
-	pos = 1.83641839E-06,17.7151546,1.30686931E-06
+	pos = 1.83641839E-06,17.7151566,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0,-2.00690651,0
 	rot = 0,0,0,1
@@ -7937,11 +7937,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 5
 	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 4
+	sqor = 5
 	sepI = 1
 	attm = 0
 	modCost = 0
@@ -8432,12 +8432,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 3
-	sidx = 4
-	sqor = 3
-	sepI = 3
+	sidx = 3
+	sqor = 4
+	sepI = 4
 	attm = 0
 	modCost = 62.0468292
 	modMass = 0.0969951227
@@ -8716,12 +8716,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 0.394977689
 	modMass = 0.013949777
@@ -8976,12 +8976,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 0.394977689
 	modMass = 0.013949777
@@ -9236,12 +9236,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -9814,12 +9814,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 365.591888
 	modMass = -0.0926990509
@@ -9847,7 +9847,7 @@ PART
 		name = ProceduralPart
 		isEnabled = True
 		tempColliderCenter = (0, 0, 0)
-		tempColliderSize = (1.6500001, 13.5999985, 1.6500001)
+		tempColliderSize = (1.6500001, 13.6000004, 1.6500001)
 		textureSet = SaturnDoubleTank2
 		capTextureIndex = 0
 		shapeName = Cylinder
@@ -10715,12 +10715,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 5.6664176
 	modMass = 0.0313328356
@@ -10969,7 +10969,7 @@ PART
 {
 	part = RO-RE-RD100_4280925842
 	partName = PartTapIn
-	pos = 1.83641839E-06,0.895845413,1.30686931E-06
+	pos = 1.83641839E-06,0.895843506,1.30686931E-06
 	attPos = 0,0.161599159,0
 	attPos0 = 0,2.30590057,0
 	rot = 0,0,0,1
@@ -10979,12 +10979,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 6
+	istg = 7
 	resPri = 0
 	dstg = 5
 	sidx = 0
-	sqor = 6
-	sepI = 3
+	sqor = 7
+	sepI = 4
 	attm = 0
 	modCost = 300
 	modMass = -0.0180263519
@@ -12088,12 +12088,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 0.573749661
 	modMass = 0.0157374963
@@ -12348,12 +12348,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 0.573749661
 	modMass = 0.0157374963
@@ -12608,12 +12608,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 1
 	modCost = 5
 	modMass = 0.0431919992
@@ -12839,12 +12839,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 1
 	modCost = 5
 	modMass = 0.0431919992
@@ -13070,12 +13070,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 1
 	modCost = 5
 	modMass = 0.0431919992
@@ -13301,12 +13301,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 1
 	modCost = 5
 	modMass = 0.0431919992
@@ -13532,12 +13532,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 6
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 5
-	sepI = 5
+	sqor = 6
+	sepI = 6
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -13557,7 +13557,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.58409929
+		scaleFactor = 1.5840981
 		height = 3.99271202
 		stagingEnabled = True
 		towerRot = -0.000104061575,0.923879504,-0.000251226913,0.382683426
@@ -13775,12 +13775,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 6
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 5
-	sepI = 5
+	sqor = 6
+	sepI = 6
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -13800,7 +13800,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.58409929
+		scaleFactor = 1.5840981
 		height = 3.99271202
 		stagingEnabled = True
 		towerRot = -0.000251226913,-0.382683456,0.00010406159,0.923879504
@@ -14008,7 +14008,7 @@ PART
 {
 	part = KzProcFairingConeEgg_4279699476
 	partName = PartTapIn
-	pos = -0.624998152,21.0141029,1.25223005E-06
+	pos = -0.624998152,21.0141048,1.25223005E-06
 	attPos = 0,0,0
 	attPos0 = -0.625,-0.385000229,-5.46392585E-08
 	rot = 0,0,0,1
@@ -14021,7 +14021,7 @@ PART
 	istg = 3
 	resPri = 0
 	dstg = 1
-	sidx = 3
+	sidx = 0
 	sqor = 3
 	sepI = 1
 	attm = 0
@@ -14290,7 +14290,7 @@ PART
 {
 	part = KzProcFairingConeEgg_4291016656
 	partName = PartTapIn
-	pos = 0.625001848,21.0141029,1.30686931E-06
+	pos = 0.625001848,21.0141048,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0.625,-0.385000229,0
 	rot = 0,1,0,-4.37113883E-08
@@ -14303,7 +14303,7 @@ PART
 	istg = 3
 	resPri = 0
 	dstg = 1
-	sidx = 3
+	sidx = 0
 	sqor = 3
 	sepI = 1
 	attm = 0

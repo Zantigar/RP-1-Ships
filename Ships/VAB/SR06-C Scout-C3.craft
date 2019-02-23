@@ -1,8 +1,8 @@
 ship = SR06-C Scout-C3
 version = 1.3.1
-description = Use Stock Gravity Turn @ 100m/s, 25deg to put 2000u SRP to 300km alt, 1600km+ downrange.
+description = Use Stock Gravity Turn @ 100m/s, 17deg to put 2000u SRP to 300km alt, 1600km+ downrange.
 type = VAB
-size = 9.64505196,18.964653,9.64506435
+size = 9.64505196,18.964653,9.64505672
 PART
 {
 	part = GuidanceEarly1m_4289226574
@@ -141,7 +141,7 @@ PART
 		ACTION
 		{
 			group = 50
-			groupName = 
+			groupName = RANGE SAFETY
 			activated = 0
 			partModule = ModuleRangeSafety
 			actionGuiName = Range Safety
@@ -152,7 +152,7 @@ PART
 		ACTION
 		{
 			group = 7
-			groupName = 
+			groupName = Trig Sci (rep)
 			activated = 0
 			partModule = ModuleScienceExperiment
 			actionGuiName = Analyze Telemetry
@@ -163,7 +163,7 @@ PART
 		ACTION
 		{
 			group = 10
-			groupName = 
+			groupName = Clr Sci (rep)
 			activated = 0
 			partModule = ModuleScienceExperiment
 			actionGuiName = Discard Telemetry
