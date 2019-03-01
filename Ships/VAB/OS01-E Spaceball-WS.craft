@@ -2,7 +2,7 @@ ship = OS01-E Spaceball-WS
 version = 1.3.1
 description = PVG pitch 100/0.85; plenty of dV. Stop at stage 3 to align and spin up final stage.
 type = VAB
-size = 9.64556503,24.3906441,9.64557743
+size = 9.64556503,24.3906441,9.6455698
 PART
 {
 	part = SXTSputnik_4282651166
@@ -2069,11 +2069,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 1
+	sqor = 2
 	sepI = 0
 	attm = 0
 	modCost = 15
@@ -3679,7 +3679,7 @@ PART
 	istg = 1
 	resPri = 0
 	dstg = 0
-	sidx = 1
+	sidx = 0
 	sqor = 1
 	sepI = 1
 	attm = 0
@@ -5470,11 +5470,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -5690,11 +5690,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -5910,11 +5910,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -6130,11 +6130,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -6350,11 +6350,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 1
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -6570,11 +6570,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 1
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -6790,11 +6790,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 1
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -7010,11 +7010,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 1
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -7230,11 +7230,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 2
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -7450,11 +7450,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 2
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -7670,11 +7670,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 2
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -7890,11 +7890,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 0
 	sidx = 2
-	sqor = 3
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0.0710000023
@@ -8110,11 +8110,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 4
+	istg = 5
 	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 4
+	sqor = 5
 	sepI = 1
 	attm = 0
 	modCost = 0
@@ -8605,12 +8605,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 3
 	sidx = 3
-	sqor = 3
-	sepI = 3
+	sqor = 4
+	sepI = 4
 	attm = 0
 	modCost = 65.4872665
 	modMass = 0.102288105
@@ -8889,12 +8889,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 0.652437091
 	modMass = 0.0165243708
@@ -9149,12 +9149,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 0.652437091
 	modMass = 0.0165243708
@@ -9409,12 +9409,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -9987,12 +9987,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 365.591888
 	modMass = -0.0926990509
@@ -10888,14 +10888,14 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
-	modCost = 5.6664176
+	modCost = 14.6664181
 	modMass = 0.0313328356
 	modSize = 0,0,0
 	link = RO-RE-RD100_4280925842
@@ -11152,12 +11152,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 6
+	istg = 7
 	resPri = 0
 	dstg = 5
 	sidx = 0
-	sqor = 6
-	sepI = 3
+	sqor = 7
+	sepI = 4
 	attm = 0
 	modCost = 300
 	modMass = -0.0180263519
@@ -12261,12 +12261,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 0.573749661
 	modMass = 0.0157374963
@@ -12521,12 +12521,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 0
 	modCost = 0.573749661
 	modMass = 0.0157374963
@@ -12781,12 +12781,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 1
 	modCost = 5
 	modMass = 0.0539925024
@@ -13012,12 +13012,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 1
 	modCost = 5
 	modMass = 0.0539925024
@@ -13243,12 +13243,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 1
 	modCost = 5
 	modMass = 0.0539925024
@@ -13474,12 +13474,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 4
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 4
 	attm = 1
 	modCost = 5
 	modMass = 0.0539925024
@@ -13705,12 +13705,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 6
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 5
-	sepI = 5
+	sqor = 6
+	sepI = 6
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -13948,12 +13948,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 6
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 5
-	sepI = 5
+	sqor = 6
+	sepI = 6
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -14191,11 +14191,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 3
 	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 2
+	sqor = 3
 	sepI = 1
 	attm = 0
 	modCost = 21.5711308
@@ -14473,11 +14473,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 3
 	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 2
+	sqor = 3
 	sepI = 1
 	attm = 0
 	modCost = 21.5711308
@@ -14794,50 +14794,6 @@ PART
 		ACTIONS
 		{
 		}
-		ACTION
-		{
-			group = 8
-			groupName = Trig Sci (new)
-			activated = 0
-			partModule = ModuleScienceExperiment
-			actionGuiName = Log Impacts
-			actionName = DeployAction
-			pmIndex = 0
-			custom1 = micrometeoriteDetect
-		}
-		ACTION
-		{
-			group = 7
-			groupName = Trig Sci (rep)
-			activated = 0
-			partModule = ModuleScienceExperiment
-			actionGuiName = Log Impacts
-			actionName = DeployAction
-			pmIndex = 0
-			custom1 = micrometeoriteDetect
-		}
-		ACTION
-		{
-			group = 9
-			groupName = Clr Sci (new)
-			activated = 0
-			partModule = ModuleScienceExperiment
-			actionGuiName = Discard Data
-			actionName = ResetAction
-			pmIndex = 0
-			custom1 = micrometeoriteDetect
-		}
-		ACTION
-		{
-			group = 10
-			groupName = Clr Sci (rep)
-			activated = 0
-			partModule = ModuleScienceExperiment
-			actionGuiName = Discard Data
-			actionName = ResetAction
-			pmIndex = 0
-			custom1 = micrometeoriteDetect
-		}
 		UPGRADESAPPLIED
 		{
 		}
@@ -14905,8 +14861,11 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleScienceExperiment
+		name = DMModuleScienceAnimateGeneric
 		isEnabled = True
+		IsDeployed = False
+		experimentsReturned = 0
+		experimentsNumber = 0
 		Deployed = False
 		Inoperable = False
 		cooldownToGo = 0
@@ -14916,13 +14875,28 @@ PART
 		}
 		ACTIONS
 		{
+			deployAction
+			{
+				actionGroup = None
+				active = False
+			}
+			retractAction
+			{
+				actionGroup = None
+				active = False
+			}
+			toggleAction
+			{
+				actionGroup = None
+				active = False
+			}
 			DeployAction
 			{
-				actionGroup = Custom07, Custom08
+				actionGroup = None
 			}
 			ResetAction
 			{
-				actionGroup = Custom09, Custom10
+				actionGroup = None
 			}
 		}
 		UPGRADESAPPLIED
@@ -15015,31 +14989,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		aniState = LOCKED
-		animSwitch = True
-		animTime = 0
-		animSpeed = 1
-		deployPercent = 100
-		animationIsDisabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleAGX
 		isEnabled = True
 		placeHolder = Hello World
@@ -15124,8 +15073,11 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleScienceExperiment
+		name = DMModuleScienceAnimateGeneric
 		isEnabled = True
+		IsDeployed = False
+		experimentsReturned = 0
+		experimentsNumber = 0
 		Deployed = False
 		Inoperable = False
 		cooldownToGo = 0
@@ -15135,6 +15087,20 @@ PART
 		}
 		ACTIONS
 		{
+			deployAction
+			{
+				actionGroup = None
+				active = False
+			}
+			retractAction
+			{
+				actionGroup = None
+				active = False
+			}
+			toggleAction
+			{
+				actionGroup = None
+			}
 			DeployAction
 			{
 				actionGroup = None
@@ -15142,6 +15108,7 @@ PART
 			ResetAction
 			{
 				actionGroup = None
+				active = False
 			}
 		}
 		UPGRADESAPPLIED
