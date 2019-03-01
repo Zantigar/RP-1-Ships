@@ -2,12 +2,12 @@ ship = OS01-A Spaceball
 version = 1.3.1
 description = PVG pitch 100/1.0; plenty of dV. Stop at stage 3 to align and spin up final stage.
 type = VAB
-size = 9.64556503,25.0127449,9.6455698
+size = 9.64556503,24.4859772,9.6455698
 PART
 {
 	part = SXTSputnik_4282651166
 	partName = PartTapIn
-	pos = 1.83641839E-06,23.7555351,1.30686931E-06
+	pos = 1.83641839E-06,23.3291283,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 1.83641839E-06,23.5845413,1.30686931E-06
 	rot = 0,0,0,1
@@ -156,7 +156,7 @@ PART
 			actionGuiName = Analyze Telemetry
 			actionName = DeployAction
 			pmIndex = 0
-			custom1 = RP0-telemetry1
+			custom1 = RP0telemetry1
 		}
 		ACTION
 		{
@@ -167,7 +167,7 @@ PART
 			actionGuiName = Discard Telemetry
 			actionName = ResetAction
 			pmIndex = 0
-			custom1 = RP0-telemetry1
+			custom1 = RP0telemetry1
 		}
 		UPGRADESAPPLIED
 		{
@@ -1105,7 +1105,7 @@ PART
 {
 	part = RFTank-III_4282634324
 	partName = PartTapIn
-	pos = 1.83641839E-06,22.5401115,1.30686931E-06
+	pos = 1.83641839E-06,22.1137047,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0,-1.0154295,0
 	rot = 0,0,0,1
@@ -1122,7 +1122,7 @@ PART
 	sqor = -1
 	sepI = 0
 	attm = 0
-	modCost = 9.44536781
+	modCost = 358.04541
 	modMass = -0.971202612
 	modSize = 0,0,0
 	link = ROAerobeeSustainer_4282610034
@@ -2056,7 +2056,7 @@ PART
 {
 	part = ROAerobeeSustainer_4282610034
 	partName = PartTapIn
-	pos = 1.83641839E-06,21.7401047,1.30686931E-06
+	pos = 1.83641839E-06,21.3136978,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0,-0.60000515,0
 	rot = 0,0,0,1
@@ -2611,9 +2611,9 @@ PART
 		operatingTime = 0
 		lastMET = 0
 		initialized = False
-		currentFlightData = 0
-		initialFlightData = 0
-		missionStartTime = 49891.379292494144
+		currentFlightData = 8776.10547
+		initialFlightData = 8776.10547
+		missionStartTime = 151020468.99446094
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2797,7 +2797,7 @@ PART
 {
 	part = SXTAntenna_4282493650
 	partName = PartTapIn
-	pos = 1.86371983E-06,23.7680511,-0.296108663
+	pos = 1.86371983E-06,23.3416443,-0.296108663
 	attPos = 0,0,0.0161821842
 	attPos0 = 2.73014482E-08,0.0125160217,-0.312292159
 	rot = -0.0200333223,4.57447911E-08,-9.16604015E-10,-0.999799311
@@ -3037,7 +3037,7 @@ PART
 {
 	part = SXTAntenna_4280805750
 	partName = PartTapIn
-	pos = 1.83500367E-06,23.7680511,0.296111286
+	pos = 1.83500367E-06,23.3416443,0.296111286
 	attPos = -1.41469148E-09,0,-0.0161821842
 	attPos0 = -6.06022428E-16,0.0125160217,0.312292159
 	rot = -4.09196878E-11,-0.999799311,0.0200333223,-2.0421751E-09
@@ -3277,7 +3277,7 @@ PART
 {
 	part = RO-GeigerMuller_4282477928
 	partName = PartTapIn
-	pos = 1.83406371E-06,24.0530853,1.30686931E-06
+	pos = 1.83406371E-06,23.6266785,1.30686931E-06
 	attPos = 0,-0.0137872696,0
 	attPos0 = -2.35462805E-09,0.311337471,0
 	rot = 7.62867325E-10,1,2.38409498E-07,-4.37047269E-08
@@ -3335,7 +3335,7 @@ PART
 			actionGuiName = Log Radiation
 			actionName = DeployAction
 			pmIndex = 0
-			custom1 = RP0-cosmicRay1
+			custom1 = RP0cosmicRay1
 		}
 		ACTION
 		{
@@ -3346,7 +3346,7 @@ PART
 			actionGuiName = Log Radiation
 			actionName = DeployAction
 			pmIndex = 0
-			custom1 = RP0-cosmicRay1
+			custom1 = RP0cosmicRay1
 		}
 		UPGRADESAPPLIED
 		{
@@ -3493,7 +3493,7 @@ PART
 {
 	part = KzResizableFairingBaseRing_4282518586
 	partName = PartTapIn
-	pos = 1.83641839E-06,21.3991051,1.30686931E-06
+	pos = 1.83641839E-06,20.8990974,1.30686931E-06
 	attPos = 0,0.0926799774,0
 	attPos0 = 0,-0.295000076,0
 	rot = 0,0,0,1
@@ -3510,8 +3510,8 @@ PART
 	sqor = 1
 	sepI = 1
 	attm = 0
-	modCost = 32.2236824
-	modMass = 0.0638916939
+	modCost = 52.1898155
+	modMass = 0.102288105
 	modSize = 0,0,0
 	link = RP0probeAvionics0-81m_4280817988
 	link = KzProcFairingConeEgg_4279699476
@@ -3536,7 +3536,7 @@ PART
 		extraRadius = 0
 		autoStrutSides = False
 		autoShape = False
-		manualMaxSize = 1.1500001
+		manualMaxSize = 1.51800013
 		manualCylStart = 0
 		manualCylEnd = 2.5
 		stagingEnabled = True
@@ -3555,7 +3555,7 @@ PART
 		name = KzNodeNumberTweaker
 		isEnabled = True
 		numNodes = 2
-		radius = 0.625
+		radius = 0.825000048
 		showInterstageNodes = False
 		stagingEnabled = True
 		EVENTS
@@ -3572,7 +3572,7 @@ PART
 	{
 		name = KzFairingBaseResizer
 		isEnabled = True
-		size = 1.25
+		size = 1.6500001
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3771,7 +3771,7 @@ PART
 {
 	part = RP0probeAvionics0-81m_4280817988
 	partName = PartTapIn
-	pos = 1.83641839E-06,21.238348,1.30686931E-06
+	pos = 1.83641839E-06,20.6490974,1.30686931E-06
 	attPos = 0,0.0892429352,0
 	attPos0 = 0,-0.25,0
 	rot = 0,0,0,1
@@ -4324,7 +4324,7 @@ PART
 {
 	part = RFTank-III_4280966234
 	partName = PartTapIn
-	pos = 1.83641839E-06,20.1470642,1.30686931E-06
+	pos = 1.83641839E-06,20.0578194,1.30686931E-06
 	attPos = 0,0.0837116241,0
 	attPos0 = 0,-0.750004768,0
 	rot = 0,0,0,1
@@ -4341,8 +4341,8 @@ PART
 	sqor = -1
 	sepI = 1
 	attm = 0
-	modCost = 45.1977615
-	modMass = -0.776805758
+	modCost = 40.9137878
+	modMass = -0.76666379
 	modSize = 0,0,0
 	link = RO.FASA.ExplorerRCS_4279059526
 	link = RO.FASA.ExplorerRCS_4279057242
@@ -4373,11 +4373,11 @@ PART
 		name = ProceduralPart
 		isEnabled = True
 		tempColliderCenter = (0, 0, 0)
-		tempColliderSize = (1.25, 2.5, 1.25)
+		tempColliderSize = (1.6500001, 1.5, 1.6500001)
 		textureSet = SaturnDoubleTank
 		capTextureIndex = 0
 		shapeName = Cylinder
-		moduleCost = 0.641229093
+		moduleCost = 0.669483662
 		stagingEnabled = True
 		EVENTS
 		{
@@ -4393,8 +4393,8 @@ PART
 	{
 		name = ProceduralShapeCylinder
 		isEnabled = True
-		diameter = 1.25
-		length = 2.5
+		diameter = 1.6500001
+		length = 1.50000012
 		stagingEnabled = True
 		EVENTS
 		{
@@ -4569,11 +4569,11 @@ PART
 		isEnabled = True
 		type = Tank-III-HP
 		utilization = 95
-		mass = 0.223194212
+		mass = 0.23333621
 		_numberOfAddedMLILayers = 0
 		partPrevTemperature = -1
 		stagingEnabled = True
-		volume = 2914.5636
+		volume = 3047.002
 		EVENTS
 		{
 		}
@@ -4605,8 +4605,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 1083.4022433153702
-			maxAmount = 1083.4022433153702
+			amount = 1132.8017674508026
+			maxAmount = 1132.8017674508026
 		}
 		TANK
 		{
@@ -5053,8 +5053,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 1821.1613566846297
-			maxAmount = 1821.1613566846297
+			amount = 1904.2002325491974
+			maxAmount = 1904.2002325491974
 		}
 		TANK
 		{
@@ -5263,8 +5263,8 @@ PART
 	RESOURCE
 	{
 		name = Kerosene
-		amount = 1083.4022433153702
-		maxAmount = 1083.4022433153702
+		amount = 1132.8017674508026
+		maxAmount = 1132.8017674508026
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -5274,8 +5274,8 @@ PART
 	RESOURCE
 	{
 		name = AK20
-		amount = 1821.1613566846297
-		maxAmount = 1821.1613566846297
+		amount = 1904.2002325491974
+		maxAmount = 1904.2002325491974
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -5287,7 +5287,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279059526
 	partName = PartTapIn
-	pos = 1.81461178E-06,18.8348255,-0.498874605
+	pos = 1.8058696E-06,19.2704754,-0.698874652
 	attPos = 0,-0.0410766602,-0.0179015696
 	attPos0 = -3.11202939E-08,-0.825000763,-0.355974346
 	rot = 0.707106829,0.707106829,5.96046519E-08,-5.96046519E-08
@@ -5507,7 +5507,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279057242
 	partName = PartTapIn
-	pos = -0.498874038,18.8348255,2.06413006E-06
+	pos = -0.698874056,19.2704754,2.36771712E-06
 	attPos = -0.0179015696,-0.0410766602,-1.06706466E-09
 	attPos0 = -0.355974317,-0.825000763,9.90257831E-09
 	rot = 0.50000006,0.49999997,-0.49999997,-0.50000006
@@ -5727,7 +5727,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279057172
 	partName = PartTapIn
-	pos = 1.8423674E-06,18.8348255,0.498877227
+	pos = 1.84475243E-06,19.2704754,0.698877275
 	attPos = 1.56501301E-09,-0.0410766602,0.0179015696
 	attPos0 = 6.22405878E-08,-0.825000763,0.355974346
 	rot = 2.86960304E-08,-9.05132751E-08,-0.707106829,-0.707106829
@@ -5947,7 +5947,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279057102
 	partName = PartTapIn
-	pos = 0.498877734,18.8348255,1.30686931E-06
+	pos = 0.698877752,19.2704754,1.30686931E-06
 	attPos = 0.0179015696,-0.0410766602,-1.06706466E-09
 	attPos0 = 0.355974317,-0.825000763,-5.23380095E-08
 	rot = -0.49999997,-0.50000006,-0.50000006,-0.49999997
@@ -6167,7 +6167,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279055674
 	partName = PartTapIn
-	pos = -0.0119551895,18.8323956,-0.499346167
+	pos = -0.0167428795,19.2690182,-0.699288905
 	attPos = -0.00896473415,-0.0426807404,-0.00247237086
 	attPos0 = 3.25135261E-08,-0.825000763,-0.37191093
 	rot = -0.707106829,0.707106829,5.9604659E-08,5.9604659E-08
@@ -6387,7 +6387,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279054916
 	partName = PartTapIn
-	pos = -0.499345601,18.8323956,0.011958532
+	pos = -0.699288368,19.2690182,0.0167463031
 	attPos = -0.00247237086,-0.0426807404,0.00896473322
 	attPos0 = -0.3719109,-0.825000763,-5.46810952E-08
 	rot = -0.49999997,0.50000006,0.50000006,-0.49999997
@@ -6607,7 +6607,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279054840
 	partName = PartTapIn
-	pos = 0.0119590256,18.8323956,0.499348789
+	pos = 0.0167467799,19.2690182,0.699291527
 	attPos = 0.00896473415,-0.0426807404,0.00247237086
 	attPos0 = 0,-0.825000763,0.37191093
 	rot = 9.05132822E-08,2.86960375E-08,0.707106829,-0.707106829
@@ -6827,7 +6827,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279054764
 	partName = PartTapIn
-	pos = 0.499349296,18.8323956,-0.0119557232
+	pos = 0.699292064,19.2690182,-0.0167434141
 	attPos = 0.00247237086,-0.0426807404,-0.00896473322
 	attPos0 = 0.3719109,-0.825000763,1.0345957E-08
 	rot = 0.50000006,-0.49999997,0.49999997,-0.50000006
@@ -7047,7 +7047,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279037188
 	partName = PartTapIn
-	pos = -0.490965754,18.8373318,2.05212586E-06
+	pos = -0.690965831,19.2719803,2.3557127E-06
 	attPos = 0.115883917,-0.0394229889,0
 	attPos0 = -0.481851518,-0.825000763,2.87205921E-08
 	rot = 1,0,0,-8.42937027E-08
@@ -7267,7 +7267,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279036386
 	partName = PartTapIn
-	pos = 1.84227315E-06,18.8373318,0.490968883
+	pos = 1.84465807E-06,19.2719803,0.690968931
 	attPos = 6.9072712E-09,-0.0394229889,-0.115883917
 	attPos0 = 0,-0.825000763,0.481851488
 	rot = 0.707106829,-5.96046519E-08,-0.707106829,-5.96046519E-08
@@ -7487,7 +7487,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279036298
 	partName = PartTapIn
-	pos = 0.490969449,18.8373318,1.30686931E-06
+	pos = 0.690969527,19.2719803,1.30686931E-06
 	attPos = -0.115883917,-0.0394229889,1.01309752E-08
 	attPos0 = 0.481851518,-0.825000763,-7.08454309E-08
 	rot = -4.37113883E-08,-8.42937027E-08,-1,3.68459459E-15
@@ -7707,7 +7707,7 @@ PART
 {
 	part = RO.FASA.ExplorerRCS_4279036210
 	partName = PartTapIn
-	pos = 1.8149575E-06,18.8373318,-0.49096626
+	pos = 1.80621521E-06,19.2719803,-0.690966308
 	attPos = 6.9072712E-09,-0.0394229889,0.115883917
 	attPos0 = -5.74411843E-08,-0.825000763,-0.481851488
 	rot = -0.707106829,-5.96046519E-08,-0.707106829,5.96046519E-08
@@ -7927,7 +7927,7 @@ PART
 {
 	part = RO-RealEngines-S2.253_4275799700
 	partName = PartTapIn
-	pos = 1.83641839E-06,17.7151566,1.30686931E-06
+	pos = 1.83641839E-06,18.1259117,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0,-2.00690651,0
 	rot = 0,0,0,1
@@ -8422,7 +8422,7 @@ PART
 {
 	part = KzInterstageAdapter2_4279471212
 	partName = PartTapIn
-	pos = 1.83641839E-06,16.8017559,1.30686931E-06
+	pos = 1.83641839E-06,17.212513,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0,-1.21339989,0
 	rot = 0,0,0,1
@@ -8439,8 +8439,8 @@ PART
 	sqor = 4
 	sepI = 4
 	attm = 0
-	modCost = 62.0468292
-	modMass = 0.0969951227
+	modCost = 65.4872665
+	modMass = 0.102288105
 	modSize = 0,0,0
 	link = KzProcFairingFuselage2_4279461866
 	link = KzProcFairingFuselage2_4279457092
@@ -8466,8 +8466,8 @@ PART
 		isEnabled = True
 		topNodeDecouplesWhenFairingsGone = False
 		extraHeight = 1.60000002
-		baseSize = 1.60000002
-		topSize = 1.25
+		baseSize = 1.6500001
+		topSize = 1.6500001
 		height = 0.5
 		stagingEnabled = True
 		EVENTS
@@ -8487,9 +8487,9 @@ PART
 		extraRadius = 0
 		autoStrutSides = False
 		autoShape = True
-		manualMaxSize = 1.472
+		manualMaxSize = 1.51800013
 		manualCylStart = 0
-		manualCylEnd = 0.294400007
+		manualCylEnd = 2.0999999
 		stagingEnabled = True
 		EVENTS
 		{
@@ -8506,7 +8506,7 @@ PART
 		name = KzNodeNumberTweaker
 		isEnabled = True
 		numNodes = 2
-		radius = 0.800000012
+		radius = 0.825000048
 		showInterstageNodes = False
 		stagingEnabled = True
 		EVENTS
@@ -8706,7 +8706,7 @@ PART
 {
 	part = KzProcFairingFuselage2_4279461866
 	partName = PartTapIn
-	pos = -0.799998164,16.4489555,1.2369311E-06
+	pos = -0.8249982,16.8643131,1.23474547E-06
 	attPos = 0,0,0
 	attPos0 = -1.50000012,-0.223999977,-1.31134172E-07
 	rot = 0,0,0,1
@@ -8723,8 +8723,8 @@ PART
 	sqor = -1
 	sepI = 4
 	attm = 0
-	modCost = 0.394977689
-	modMass = 0.013949777
+	modCost = 0.652437091
+	modMass = 0.0165243708
 	modSize = 0,0,0
 	sym = KzProcFairingFuselage2_4279457092
 	attN = connect,KzInterstageAdapter2_4279471212
@@ -8743,14 +8743,14 @@ PART
 		isEnabled = True
 		numSegs = 12
 		numSideParts = 2
-		baseRad = 0.736000001
-		maxRad = 0.736000001
+		baseRad = 0.759000063
+		maxRad = 0.759000063
 		cylStart = 0
-		cylEnd = 0.294400007
-		topRad = 0.56099999
+		cylEnd = 2.0999999
+		topRad = 0.759000063
 		inlineHeight = 2.0999999
-		sideThickness = 0.064000003
-		meshPos = (0.800000012, 0.352800369, 6.99382099E-08)
+		sideThickness = 0.0659999996
+		meshPos = (0.825000048, 0.348199844, 7.21238393E-08)
 		meshRot = (0, 1, 0, -4.37113883E-08)
 		shapeLock = False
 		stagingEnabled = True
@@ -8966,7 +8966,7 @@ PART
 {
 	part = KzProcFairingFuselage2_4279457092
 	partName = PartTapIn
-	pos = 0.80000186,16.4489555,1.30686931E-06
+	pos = 0.825001895,16.8643131,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 1.50000012,-0.223999977,0
 	rot = 0,1,0,-4.37113883E-08
@@ -8983,8 +8983,8 @@ PART
 	sqor = -1
 	sepI = 4
 	attm = 0
-	modCost = 0.394977689
-	modMass = 0.013949777
+	modCost = 0.652437091
+	modMass = 0.0165243708
 	modSize = 0,0,0
 	sym = KzProcFairingFuselage2_4279461866
 	attN = connect,KzInterstageAdapter2_4279471212
@@ -9003,14 +9003,14 @@ PART
 		isEnabled = True
 		numSegs = 12
 		numSideParts = 2
-		baseRad = 0.736000001
-		maxRad = 0.736000001
+		baseRad = 0.759000063
+		maxRad = 0.759000063
 		cylStart = 0
-		cylEnd = 0.294400007
-		topRad = 0.56099999
+		cylEnd = 2.0999999
+		topRad = 0.759000063
 		inlineHeight = 2.0999999
-		sideThickness = 0.064000003
-		meshPos = (0.800000012, 0.352800369, 6.99382241E-08)
+		sideThickness = 0.0659999996
+		meshPos = (0.825000048, 0.348199844, 7.21237967E-08)
 		meshRot = (0, -1, 0, -4.37113883E-08)
 		shapeLock = False
 		stagingEnabled = True
@@ -9226,7 +9226,7 @@ PART
 {
 	part = GuidanceEarly1m_4279405830
 	partName = PartTapIn
-	pos = 1.83641839E-06,17.1721573,1.30686931E-06
+	pos = 1.83641839E-06,17.5921135,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0,0.370400429,0
 	rot = 0,0,0,1
@@ -9804,7 +9804,7 @@ PART
 {
 	part = RFTank-III_4283223554
 	partName = PartTapIn
-	pos = 1.83641839E-06,10.001749,1.30686931E-06
+	pos = 1.83641839E-06,10.4125061,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0,-6.80000639,0
 	rot = 0,0,0,1
@@ -9847,7 +9847,7 @@ PART
 		name = ProceduralPart
 		isEnabled = True
 		tempColliderCenter = (0, 0, 0)
-		tempColliderSize = (1.6500001, 13.6000004, 1.6500001)
+		tempColliderSize = (1.6500001, 13.5999985, 1.6500001)
 		textureSet = SaturnDoubleTank2
 		capTextureIndex = 0
 		shapeName = Cylinder
@@ -10705,7 +10705,7 @@ PART
 {
 	part = KzFlatBoattail_4284580112
 	partName = PartTapIn
-	pos = 1.83641839E-06,3.20174408,1.30686931E-06
+	pos = 1.83641839E-06,3.61250114,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0,-7.00000477,0
 	rot = 0,0,-1,0
@@ -10969,7 +10969,7 @@ PART
 {
 	part = RO-RE-RD100_4280925842
 	partName = PartTapIn
-	pos = 1.83641839E-06,0.895843506,1.30686931E-06
+	pos = 1.83641839E-06,1.30660248,1.30686931E-06
 	attPos = 0,0.161599159,0
 	attPos0 = 0,2.30590057,0
 	rot = 0,0,0,1
@@ -12078,7 +12078,7 @@ PART
 {
 	part = KzProcFairingFuselage2_4283167780
 	partName = PartTapIn
-	pos = 0.825001895,3.66379356,1.23474547E-06
+	pos = 0.825001895,4.07455063,1.23474547E-06
 	attPos = 0,0,0
 	attPos0 = -0.825000048,-0.462050438,-7.17118382E-08
 	rot = 0,0,-1,0
@@ -12338,7 +12338,7 @@ PART
 {
 	part = KzProcFairingFuselage2_4283163252
 	partName = PartTapIn
-	pos = -0.8249982,3.66379356,1.30686931E-06
+	pos = -0.8249982,4.07455063,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0.825000048,-0.462050438,0
 	rot = 1,0,4.37113883E-08,0
@@ -12598,7 +12598,7 @@ PART
 {
 	part = RO-B9ProcAMWing-Supersonic_4290510784
 	partName = PartTapIn
-	pos = 1.80045345E-06,3.24848175,-0.822779953
+	pos = 1.80045345E-06,3.65923882,-0.822779953
 	attPos = 0,-1.15108967,0
 	attPos0 = -7.19446689E-08,-6.95189285,-0.822781265
 	rot = 0,0.707106888,0,0.707106769
@@ -12616,8 +12616,8 @@ PART
 	sepI = 4
 	attm = 1
 	modCost = 5
-	modMass = 0.0431919992
-	modSize = -3,-2.5,-0.159999996
+	modMass = 0.0539925024
+	modSize = -2.75,-2.5,-0.159999996
 	sym = RO-B9ProcAMWing-Supersonic_4283159944
 	sym = RO-B9ProcAMWing-Supersonic_4283159822
 	sym = RO-B9ProcAMWing-Supersonic_4283159700
@@ -12637,7 +12637,7 @@ PART
 		isEnabled = True
 		isAttached = True
 		isSetToDefaultValues = True
-		sharedBaseLength = 1
+		sharedBaseLength = 1.25
 		sharedBaseWidthRoot = 1.5
 		sharedBaseWidthTip = 0.500100017
 		sharedBaseOffsetRoot = 0
@@ -12829,7 +12829,7 @@ PART
 {
 	part = RO-B9ProcAMWing-Supersonic_4283159944
 	partName = PartTapIn
-	pos = -0.822779417,3.24848175,2.55579721E-06
+	pos = -0.822779417,3.65923882,2.55579721E-06
 	attPos = 0,-1.15108967,0
 	attPos0 = -0.822781205,-6.95189285,2.32830644E-08
 	rot = 0,1,0,-8.42936956E-08
@@ -12847,8 +12847,8 @@ PART
 	sepI = 4
 	attm = 1
 	modCost = 5
-	modMass = 0.0431919992
-	modSize = -3,-2.5,-0.159999996
+	modMass = 0.0539925024
+	modSize = -2.75,-2.5,-0.159999996
 	sym = RO-B9ProcAMWing-Supersonic_4290510784
 	sym = RO-B9ProcAMWing-Supersonic_4283159822
 	sym = RO-B9ProcAMWing-Supersonic_4283159700
@@ -12868,7 +12868,7 @@ PART
 		isEnabled = True
 		isAttached = True
 		isSetToDefaultValues = True
-		sharedBaseLength = 1
+		sharedBaseLength = 1.25
 		sharedBaseWidthRoot = 1.5
 		sharedBaseWidthTip = 0.500100017
 		sharedBaseOffsetRoot = 0
@@ -13060,7 +13060,7 @@ PART
 {
 	part = RO-B9ProcAMWing-Supersonic_4283159822
 	partName = PartTapIn
-	pos = 1.84622991E-06,3.24848175,0.822782636
+	pos = 1.84622991E-06,3.65923882,0.822782636
 	attPos = 0,-1.15108967,0
 	attPos0 = 1.43889338E-07,-6.95189285,0.822781265
 	rot = 0,0.707106709,0,-0.707106948
@@ -13078,8 +13078,8 @@ PART
 	sepI = 4
 	attm = 1
 	modCost = 5
-	modMass = 0.0431919992
-	modSize = -3,-2.5,-0.159999996
+	modMass = 0.0539925024
+	modSize = -2.75,-2.5,-0.159999996
 	sym = RO-B9ProcAMWing-Supersonic_4290510784
 	sym = RO-B9ProcAMWing-Supersonic_4283159944
 	sym = RO-B9ProcAMWing-Supersonic_4283159700
@@ -13099,7 +13099,7 @@ PART
 		isEnabled = True
 		isAttached = True
 		isSetToDefaultValues = True
-		sharedBaseLength = 1
+		sharedBaseLength = 1.25
 		sharedBaseWidthRoot = 1.5
 		sharedBaseWidthTip = 0.500100017
 		sharedBaseOffsetRoot = 0
@@ -13291,7 +13291,7 @@ PART
 {
 	part = RO-B9ProcAMWing-Supersonic_4283159700
 	partName = PartTapIn
-	pos = 0.822783053,3.24848175,1.30686931E-06
+	pos = 0.822783053,3.65923882,1.30686931E-06
 	attPos = 0,-1.15108967,0
 	attPos0 = 0.822781205,-6.95189285,-1.21071935E-07
 	rot = 0,-8.42936956E-08,0,-1
@@ -13309,8 +13309,8 @@ PART
 	sepI = 4
 	attm = 1
 	modCost = 5
-	modMass = 0.0431919992
-	modSize = -3,-2.5,-0.159999996
+	modMass = 0.0539925024
+	modSize = -2.75,-2.5,-0.159999996
 	sym = RO-B9ProcAMWing-Supersonic_4290510784
 	sym = RO-B9ProcAMWing-Supersonic_4283159944
 	sym = RO-B9ProcAMWing-Supersonic_4283159822
@@ -13330,7 +13330,7 @@ PART
 		isEnabled = True
 		isAttached = True
 		isSetToDefaultValues = True
-		sharedBaseLength = 1
+		sharedBaseLength = 1.25
 		sharedBaseWidthRoot = 1.5
 		sharedBaseWidthTip = 0.500100017
 		sharedBaseOffsetRoot = 0
@@ -13522,7 +13522,7 @@ PART
 {
 	part = launchClamp1_4292115340
 	partName = PartTapIn
-	pos = -1.14791512,3.50235367,-1.1479156
+	pos = -1.14791512,3.91311073,-1.1479156
 	attPos = 0,0,0
 	attPos0 = -1.14791691,-6.65070534,-1.14791691
 	rot = 0.000251226913,-0.382683396,-0.00010406159,-0.923879504
@@ -13557,8 +13557,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.5840981
-		height = 3.99271202
+		scaleFactor = 1.74706626
+		height = 4.40346909
 		stagingEnabled = True
 		towerRot = -0.000104061575,0.923879504,-0.000251226913,0.382683426
 		EVENTS
@@ -13765,7 +13765,7 @@ PART
 {
 	part = launchClamp1_4283139958
 	partName = PartTapIn
-	pos = 1.14791894,3.50235367,1.14791811
+	pos = 1.14791894,3.91311073,1.14791811
 	attPos = 0,0,0
 	attPos0 = 1.14791703,-6.65070534,1.14791679
 	rot = -0.000104061604,-0.923879504,-0.000251226913,0.382683426
@@ -13800,8 +13800,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.5840981
-		height = 3.99271202
+		scaleFactor = 1.74706626
+		height = 4.40346909
 		stagingEnabled = True
 		towerRot = -0.000251226913,-0.382683456,0.00010406159,0.923879504
 		EVENTS
@@ -14008,7 +14008,7 @@ PART
 {
 	part = KzProcFairingConeEgg_4279699476
 	partName = PartTapIn
-	pos = -0.624998152,21.0141048,1.25223005E-06
+	pos = -0.8249982,20.5508976,1.23474547E-06
 	attPos = 0,0,0
 	attPos0 = -0.625,-0.385000229,-5.46392585E-08
 	rot = 0,0,0,1
@@ -14025,8 +14025,8 @@ PART
 	sqor = 3
 	sepI = 1
 	attm = 0
-	modCost = 11.0032663
-	modMass = 0.0150040826
+	modCost = 681.356323
+	modMass = 0.0282139126
 	modSize = 0,0,0
 	sym = KzProcFairingConeEgg_4291016656
 	attN = connect,KzResizableFairingBaseRing_4282518586
@@ -14045,14 +14045,14 @@ PART
 		isEnabled = True
 		numSegs = 12
 		numSideParts = 2
-		baseRad = 0.574999988
-		maxRad = 0.575000048
+		baseRad = 0.759000063
+		maxRad = 0.759000063
 		cylStart = 0
 		cylEnd = 2.5
 		topRad = 0
 		inlineHeight = 0
-		sideThickness = 0.049999997
-		meshPos = (0.625, 0.385000229, 5.46392585E-08)
+		sideThickness = 0.0659999996
+		meshPos = (0.825000048, 0.348199844, 7.21238393E-08)
 		meshRot = (0, 1, 0, -4.37113883E-08)
 		shapeLock = False
 		stagingEnabled = True
@@ -14290,7 +14290,7 @@ PART
 {
 	part = KzProcFairingConeEgg_4291016656
 	partName = PartTapIn
-	pos = 0.625001848,21.0141048,1.30686931E-06
+	pos = 0.825001895,20.5508976,1.30686931E-06
 	attPos = 0,0,0
 	attPos0 = 0.625,-0.385000229,0
 	rot = 0,1,0,-4.37113883E-08
@@ -14307,8 +14307,8 @@ PART
 	sqor = 3
 	sepI = 1
 	attm = 0
-	modCost = 11.0032663
-	modMass = 0.0150040826
+	modCost = 681.356323
+	modMass = 0.0282139126
 	modSize = 0,0,0
 	sym = KzProcFairingConeEgg_4279699476
 	attN = connect,KzResizableFairingBaseRing_4282518586
@@ -14327,14 +14327,14 @@ PART
 		isEnabled = True
 		numSegs = 12
 		numSideParts = 2
-		baseRad = 0.574999988
-		maxRad = 0.575000048
+		baseRad = 0.759000063
+		maxRad = 0.759000063
 		cylStart = 0
 		cylEnd = 2.5
 		topRad = 0
 		inlineHeight = 0
-		sideThickness = 0.049999997
-		meshPos = (0.625, 0.385000229, 5.46392371E-08)
+		sideThickness = 0.0659999996
+		meshPos = (0.825000048, 0.348199844, 7.21237967E-08)
 		meshRot = (0, -1, 0, -4.37113883E-08)
 		shapeLock = False
 		stagingEnabled = True

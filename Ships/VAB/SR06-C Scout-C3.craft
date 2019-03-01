@@ -5,6 +5,930 @@ type = VAB
 size = 9.64505196,18.964653,9.64505672
 PART
 {
+	part = RO-B9ProcAMWing-Supersonic_4290511028
+	partName = PartTapIn
+	pos = -0.814030707,3.62529182,-0.0083722854
+	attPos = 0,-1.15108967,0
+	attPos0 = -0.822524965,-3.28533173,-1.21770427E-07
+	rot = 0,1,0,8.42936956E-08
+	attRot = 0,0,0,1
+	attRot0 = 0,1,0,8.42936956E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 5
+	modMass = 0.0431919992
+	modSize = -3,-2.5,-0.159999996
+	sym = RO-B9ProcAMWing-Supersonic_4290512480
+	sym = RO-B9ProcAMWing-Supersonic_4290510906
+	sym = RO-B9ProcAMWing-Supersonic_4290510784
+	srfN = srfAttach,RFTank-II_4292141640
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = WingProcedural
+		isEnabled = True
+		isAttached = True
+		isSetToDefaultValues = True
+		sharedBaseLength = 1
+		sharedBaseWidthRoot = 1.5
+		sharedBaseWidthTip = 0.500100017
+		sharedBaseOffsetRoot = 0
+		sharedBaseOffsetTip = 0.75
+		sharedBaseThicknessRoot = 0.0399999991
+		sharedBaseThicknessTip = 0.0399999991
+		sharedEdgeTypeLeading = 2
+		sharedEdgeWidthLeadingRoot = 0.0399999991
+		sharedEdgeWidthLeadingTip = 0.0399999991
+		sharedEdgeTypeTrailing = 3
+		sharedEdgeWidthTrailingRoot = 0.0399999991
+		sharedEdgeWidthTrailingTip = 0.0399999991
+		sharedMaterialST = 1
+		sharedColorSTOpacity = 0
+		sharedColorSTHue = 0.100000001
+		sharedColorSTSaturation = 0.75
+		sharedColorSTBrightness = 0.600000024
+		sharedMaterialSB = 1
+		sharedColorSBOpacity = 0
+		sharedColorSBHue = 0.100000001
+		sharedColorSBSaturation = 0.75
+		sharedColorSBBrightness = 0.600000024
+		sharedMaterialET = 4
+		sharedColorETOpacity = 0
+		sharedColorETHue = 0.100000001
+		sharedColorETSaturation = 0.75
+		sharedColorETBrightness = 0.600000024
+		sharedMaterialEL = 4
+		sharedColorELOpacity = 0
+		sharedColorELHue = 0.100000001
+		sharedColorELSaturation = 0.75
+		sharedColorELBrightness = 0.600000024
+		fuelSelectedTankSetup = 0
+		stagingEnabled = True
+		mirrorTexturing = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = 50
+		yawaxis = 50
+		rollaxis = 30
+		pitchaxisDueToAoA = 0
+		brakeRudder = 0
+		maxdeflect = 5
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 0
+		maxdeflectFlap = 15
+		massMultiplier = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = RO-B9ProcAMWing-Supersonic_4290512480
+	partName = PartTapIn
+	pos = 0.00849428121,3.62529182,-0.830896974
+	attPos = 0,-1.15108967,0
+	attPos0 = 7.26431608E-08,-3.28533173,-0.822525024
+	rot = 0,0.707106769,0,0.707106888
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106769,0,0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 5
+	modMass = 0.0431919992
+	modSize = -3,-2.5,-0.159999996
+	sym = RO-B9ProcAMWing-Supersonic_4290511028
+	sym = RO-B9ProcAMWing-Supersonic_4290510906
+	sym = RO-B9ProcAMWing-Supersonic_4290510784
+	srfN = srfAttach,RFTank-II_4292141640
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = WingProcedural
+		isEnabled = True
+		isAttached = True
+		isSetToDefaultValues = True
+		sharedBaseLength = 1
+		sharedBaseWidthRoot = 1.5
+		sharedBaseWidthTip = 0.500100017
+		sharedBaseOffsetRoot = 0
+		sharedBaseOffsetTip = 0.75
+		sharedBaseThicknessRoot = 0.0399999991
+		sharedBaseThicknessTip = 0.0399999991
+		sharedEdgeTypeLeading = 2
+		sharedEdgeWidthLeadingRoot = 0.0399999991
+		sharedEdgeWidthLeadingTip = 0.0399999991
+		sharedEdgeTypeTrailing = 3
+		sharedEdgeWidthTrailingRoot = 0.0399999991
+		sharedEdgeWidthTrailingTip = 0.0399999991
+		sharedMaterialST = 1
+		sharedColorSTOpacity = 0
+		sharedColorSTHue = 0.100000001
+		sharedColorSTSaturation = 0.75
+		sharedColorSTBrightness = 0.600000024
+		sharedMaterialSB = 1
+		sharedColorSBOpacity = 0
+		sharedColorSBHue = 0.100000001
+		sharedColorSBSaturation = 0.75
+		sharedColorSBBrightness = 0.600000024
+		sharedMaterialET = 4
+		sharedColorETOpacity = 0
+		sharedColorETHue = 0.100000001
+		sharedColorETSaturation = 0.75
+		sharedColorETBrightness = 0.600000024
+		sharedMaterialEL = 4
+		sharedColorELOpacity = 0
+		sharedColorELHue = 0.100000001
+		sharedColorELSaturation = 0.75
+		sharedColorELBrightness = 0.600000024
+		fuelSelectedTankSetup = 0
+		stagingEnabled = True
+		mirrorTexturing = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = 50
+		yawaxis = 50
+		rollaxis = 30
+		pitchaxisDueToAoA = 0
+		brakeRudder = 0
+		maxdeflect = 5
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 0
+		maxdeflectFlap = 15
+		massMultiplier = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = RO-B9ProcAMWing-Supersonic_4290510784
+	partName = PartTapIn
+	pos = 0.831019223,3.62529182,-0.00837196503
+	attPos = 0,-1.15108967,0
+	attPos0 = 0.822524965,-3.28533173,2.3515895E-08
+	rot = 0,8.42936956E-08,0,-1
+	attRot = 0,0,0,1
+	attRot0 = 0,8.42936956E-08,0,-1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 5
+	modMass = 0.0431919992
+	modSize = -3,-2.5,-0.159999996
+	sym = RO-B9ProcAMWing-Supersonic_4290512480
+	sym = RO-B9ProcAMWing-Supersonic_4290511028
+	sym = RO-B9ProcAMWing-Supersonic_4290510906
+	srfN = srfAttach,RFTank-II_4292141640
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = WingProcedural
+		isEnabled = True
+		isAttached = True
+		isSetToDefaultValues = True
+		sharedBaseLength = 1
+		sharedBaseWidthRoot = 1.5
+		sharedBaseWidthTip = 0.500100017
+		sharedBaseOffsetRoot = 0
+		sharedBaseOffsetTip = 0.75
+		sharedBaseThicknessRoot = 0.0399999991
+		sharedBaseThicknessTip = 0.0399999991
+		sharedEdgeTypeLeading = 2
+		sharedEdgeWidthLeadingRoot = 0.0399999991
+		sharedEdgeWidthLeadingTip = 0.0399999991
+		sharedEdgeTypeTrailing = 3
+		sharedEdgeWidthTrailingRoot = 0.0399999991
+		sharedEdgeWidthTrailingTip = 0.0399999991
+		sharedMaterialST = 1
+		sharedColorSTOpacity = 0
+		sharedColorSTHue = 0.100000001
+		sharedColorSTSaturation = 0.75
+		sharedColorSTBrightness = 0.600000024
+		sharedMaterialSB = 1
+		sharedColorSBOpacity = 0
+		sharedColorSBHue = 0.100000001
+		sharedColorSBSaturation = 0.75
+		sharedColorSBBrightness = 0.600000024
+		sharedMaterialET = 4
+		sharedColorETOpacity = 0
+		sharedColorETHue = 0.100000001
+		sharedColorETSaturation = 0.75
+		sharedColorETBrightness = 0.600000024
+		sharedMaterialEL = 4
+		sharedColorELOpacity = 0
+		sharedColorELHue = 0.100000001
+		sharedColorELSaturation = 0.75
+		sharedColorELBrightness = 0.600000024
+		fuelSelectedTankSetup = 0
+		stagingEnabled = True
+		mirrorTexturing = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = 50
+		yawaxis = 50
+		rollaxis = 30
+		pitchaxisDueToAoA = 0
+		brakeRudder = 0
+		maxdeflect = 5
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 0
+		maxdeflectFlap = 15
+		massMultiplier = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = RO-B9ProcAMWing-Supersonic_4290510906
+	partName = PartTapIn
+	pos = 0.00849432778,3.62529182,0.814153075
+	attPos = 0,-1.15108967,0
+	attPos0 = 0,-3.28533173,0.822525024
+	rot = 0,0.707106829,0,-0.707106829
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106829,0,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 5
+	modMass = 0.0431919992
+	modSize = -3,-2.5,-0.159999996
+	sym = RO-B9ProcAMWing-Supersonic_4290512480
+	sym = RO-B9ProcAMWing-Supersonic_4290511028
+	sym = RO-B9ProcAMWing-Supersonic_4290510784
+	srfN = srfAttach,RFTank-II_4292141640
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = WingProcedural
+		isEnabled = True
+		isAttached = True
+		isSetToDefaultValues = True
+		sharedBaseLength = 1
+		sharedBaseWidthRoot = 1.5
+		sharedBaseWidthTip = 0.500100017
+		sharedBaseOffsetRoot = 0
+		sharedBaseOffsetTip = 0.75
+		sharedBaseThicknessRoot = 0.0399999991
+		sharedBaseThicknessTip = 0.0399999991
+		sharedEdgeTypeLeading = 2
+		sharedEdgeWidthLeadingRoot = 0.0399999991
+		sharedEdgeWidthLeadingTip = 0.0399999991
+		sharedEdgeTypeTrailing = 3
+		sharedEdgeWidthTrailingRoot = 0.0399999991
+		sharedEdgeWidthTrailingTip = 0.0399999991
+		sharedMaterialST = 1
+		sharedColorSTOpacity = 0
+		sharedColorSTHue = 0.100000001
+		sharedColorSTSaturation = 0.75
+		sharedColorSTBrightness = 0.600000024
+		sharedMaterialSB = 1
+		sharedColorSBOpacity = 0
+		sharedColorSBHue = 0.100000001
+		sharedColorSBSaturation = 0.75
+		sharedColorSBBrightness = 0.600000024
+		sharedMaterialET = 4
+		sharedColorETOpacity = 0
+		sharedColorETHue = 0.100000001
+		sharedColorETSaturation = 0.75
+		sharedColorETBrightness = 0.600000024
+		sharedMaterialEL = 4
+		sharedColorELOpacity = 0
+		sharedColorELHue = 0.100000001
+		sharedColorELSaturation = 0.75
+		sharedColorELBrightness = 0.600000024
+		fuelSelectedTankSetup = 0
+		stagingEnabled = True
+		mirrorTexturing = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = 50
+		yawaxis = 50
+		rollaxis = 30
+		pitchaxisDueToAoA = 0
+		brakeRudder = 0
+		maxdeflect = 5
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 0
+		maxdeflectFlap = 15
+		massMultiplier = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
 	part = GuidanceEarly1m_4289226574
 	partName = PartTapIn
 	pos = 0.00849431753,18.4650307,-0.00837196503
@@ -158,7 +1082,7 @@ PART
 			actionGuiName = Analyze Telemetry
 			actionName = DeployAction
 			pmIndex = 0
-			custom1 = RP0-telemetry1
+			custom1 = RP0telemetry1
 		}
 		ACTION
 		{
@@ -169,7 +1093,7 @@ PART
 			actionGuiName = Discard Telemetry
 			actionName = ResetAction
 			pmIndex = 0
-			custom1 = RP0-telemetry1
+			custom1 = RP0telemetry1
 		}
 		UPGRADESAPPLIED
 		{
@@ -1091,6 +2015,1899 @@ PART
 		hideFlow = False
 		isVisible = True
 		flowMode = Both
+	}
+}
+PART
+{
+	part = KzFlatBoattail_4284580112
+	partName = PartTapIn
+	pos = 0.00849431753,4.38902473,-0.00837196503
+	attPos = 0,0,0
+	attPos0 = 0,-4.00000477,0
+	rot = 0,0,-1,0
+	attRot = 0,0,-0.99999994,0
+	attRot0 = 0,0,-1,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 5.6664176
+	modMass = 0.0313328356
+	modSize = 0,0,0
+	link = RO-RE-RD100_4280925842
+	link = KzProcFairingFuselage2_4284571368
+	link = KzProcFairingFuselage2_4289394828
+	attN = bottom,RFTank-II_4292141640
+	attN = top,RO-RE-RD100_4280925842
+	attN = connect01,KzProcFairingFuselage2_4289394828
+	attN = connect02,KzProcFairingFuselage2_4284571368
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingAdapter
+		isEnabled = True
+		topNodeDecouplesWhenFairingsGone = False
+		extraHeight = 0
+		baseSize = 1.6500001
+		topSize = 1.6500001
+		height = 2
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralFairingBase
+		isEnabled = True
+		extraRadius = 0
+		autoStrutSides = False
+		autoShape = True
+		manualMaxSize = 1.51800013
+		manualCylStart = 0
+		manualCylEnd = 2
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KzNodeNumberTweaker
+		isEnabled = True
+		numNodes = 2
+		radius = 0.825000048
+		showInterstageNodes = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+			}
+			EnableAction
+			{
+				actionGroup = None
+				active = False
+			}
+			DisableAction
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToolingGeneric
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = KzProcFairingFuselage2_4289394828
+	partName = PartTapIn
+	pos = -0.81650573,4.85107422,-0.00837196503
+	attPos = 0,0,0
+	attPos0 = 0.825000048,-0.462049484,0
+	rot = 1,0,4.37113883E-08,0
+	attRot = 0,0,-0.99999994,0
+	attRot0 = 0,1,0,-4.37113883E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0.573749661
+	modMass = 0.0157374963
+	modSize = 0,0,0
+	sym = KzProcFairingFuselage2_4284571368
+	attN = connect,KzFlatBoattail_4284580112
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingSide
+		isEnabled = True
+		numSegs = 12
+		numSideParts = 2
+		baseRad = 0.759000063
+		maxRad = 0.759000063
+		cylStart = 0
+		cylEnd = 2
+		topRad = 0.759000063
+		inlineHeight = 2
+		sideThickness = 0.0659999996
+		meshPos = (0.824999332, 0.462048858, 7.21237328E-08)
+		meshRot = (0, -1, 0, -4.37113883E-08)
+		shapeLock = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 0
+		selectedTextureURL = ProceduralFairings-ForEverything/Textures/fairing1
+		selectedMapURL = ProceduralFairings-ForEverything/Textures/AtlasBumpNRM
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+			}
+			EnableAction
+			{
+				actionGroup = None
+				active = False
+			}
+			DisableAction
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToolingPFSide
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSeeThroughObject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = KzProcFairingFuselage2_4284571368
+	partName = PartTapIn
+	pos = 0.833494365,4.85107422,-0.00837203674
+	attPos = 0,0,0
+	attPos0 = -0.825000048,-0.462049484,-7.17118382E-08
+	rot = 0,0,-1,0
+	attRot = 0,0,-0.99999994,0
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0.573749661
+	modMass = 0.0157374963
+	modSize = 0,0,0
+	sym = KzProcFairingFuselage2_4289394828
+	attN = connect,KzFlatBoattail_4284580112
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingSide
+		isEnabled = True
+		numSegs = 12
+		numSideParts = 2
+		baseRad = 0.759000063
+		maxRad = 0.759000063
+		cylStart = 0
+		cylEnd = 2
+		topRad = 0.759000063
+		inlineHeight = 2
+		sideThickness = 0.0659999996
+		meshPos = (0.824999332, 0.462048858, 7.17117743E-08)
+		meshRot = (0, 1, 0, -4.37113883E-08)
+		shapeLock = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 0
+		selectedTextureURL = ProceduralFairings-ForEverything/Textures/fairing1
+		selectedMapURL = ProceduralFairings-ForEverything/Textures/AtlasBumpNRM
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+			}
+			EnableAction
+			{
+				actionGroup = None
+				active = False
+			}
+			DisableAction
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToolingPFSide
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSeeThroughObject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = RO-RE-RD100_4280925842
+	partName = PartTapIn
+	pos = 0.00849431753,2.08312607,-0.00837196503
+	attPos = 0,0.161599159,0
+	attPos0 = 0,2.30590057,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,1,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 1
+	sepI = -1
+	attm = 0
+	modCost = 300
+	modMass = -0.0180263519
+	modSize = 0,0,0
+	attN = top,KzFlatBoattail_4284580112
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesRF
+		isEnabled = True
+		ignitions = 1
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		Ullage
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		animState = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = EngineGroupModule
+		isEnabled = True
+		EngineGroupId = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngineConfigs
+		isEnabled = True
+		configuration = RD-103
+		techLevel = -1
+		thrustRating = maxThrust
+		modded = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTagEngineLiquidTurbo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightInterop
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightCore
+		isEnabled = True
+		operatingTime = 0
+		lastMET = 0
+		initialized = False
+		currentFlightData = 0
+		initialFlightData = 0
+		missionStartTime = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FlightDataRecorder_Engine
+		isEnabled = True
+		lastRecordedMet = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightReliability
+		isEnabled = True
+		lastCheck = 0
+		lastReliability = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightReliability_EngineCycle
+		isEnabled = True
+		engineOperatingTime = 0
+		previousOperatingTime = 0
+		lastCheck = 0
+		lastReliability = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_ShutdownEngine
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_IgnitionFail
+		isEnabled = True
+		numIgnitions = 0
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_ReducedMaxThrust
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_EnginePerformanceLoss
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_Explode
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightCore
+		isEnabled = True
+		operatingTime = 0
+		lastMET = 0
+		initialized = False
+		currentFlightData = 0
+		initialFlightData = 0
+		missionStartTime = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FlightDataRecorder_Engine
+		isEnabled = True
+		lastRecordedMet = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightReliability
+		isEnabled = True
+		lastCheck = 0
+		lastReliability = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightReliability_EngineCycle
+		isEnabled = True
+		engineOperatingTime = 0
+		previousOperatingTime = 0
+		lastCheck = 0
+		lastReliability = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_ShutdownEngine
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_IgnitionFail
+		isEnabled = True
+		numIgnitions = 0
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_ReducedMaxThrust
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_EnginePerformanceLoss
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_Explode
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightCore
+		isEnabled = True
+		operatingTime = 0
+		lastMET = 0
+		initialized = False
+		currentFlightData = 0
+		initialFlightData = 0
+		missionStartTime = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FlightDataRecorder_Engine
+		isEnabled = True
+		lastRecordedMet = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightReliability
+		isEnabled = True
+		lastCheck = 0
+		lastReliability = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightReliability_EngineCycle
+		isEnabled = True
+		engineOperatingTime = 0
+		previousOperatingTime = 0
+		lastCheck = 0
+		lastReliability = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_ShutdownEngine
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_IgnitionFail
+		isEnabled = True
+		numIgnitions = 0
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_ReducedMaxThrust
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_EnginePerformanceLoss
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_Explode
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightCore
+		isEnabled = True
+		operatingTime = 0
+		lastMET = 0
+		initialized = False
+		currentFlightData = 0
+		initialFlightData = 0
+		missionStartTime = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FlightDataRecorder_Engine
+		isEnabled = True
+		lastRecordedMet = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightReliability
+		isEnabled = True
+		lastCheck = 0
+		lastReliability = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightReliability_EngineCycle
+		isEnabled = True
+		engineOperatingTime = 0
+		previousOperatingTime = 0
+		lastCheck = 0
+		lastReliability = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_ShutdownEngine
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_IgnitionFail
+		isEnabled = True
+		numIgnitions = 0
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_ReducedMaxThrust
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_EnginePerformanceLoss
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_Explode
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightCore
+		isEnabled = True
+		operatingTime = 0
+		lastMET = 0
+		initialized = False
+		currentFlightData = 0
+		initialFlightData = 0
+		missionStartTime = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FlightDataRecorder_Engine
+		isEnabled = True
+		lastRecordedMet = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightReliability
+		isEnabled = True
+		lastCheck = 0
+		lastReliability = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightReliability_EngineCycle
+		isEnabled = True
+		engineOperatingTime = 0
+		previousOperatingTime = 0
+		lastCheck = 0
+		lastReliability = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_ShutdownEngine
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_IgnitionFail
+		isEnabled = True
+		numIgnitions = 0
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_ReducedMaxThrust
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_EnginePerformanceLoss
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TestFlightFailure_Explode
+		isEnabled = True
+		failed = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		internalDamage = 0
+		stagingEnabled = True
+		damageCube = 0, 0, 0, 0, 0, 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleShowInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 }
 PART
@@ -3415,3355 +6232,6 @@ PART
 				actionGroup = None
 				active = False
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = RO-B9ProcAMWing-Supersonic_4290512480
-	partName = PartTapIn
-	pos = 0.00849428121,3.62529182,-0.830896974
-	attPos = 0,-1.15108967,0
-	attPos0 = 7.26431608E-08,-3.28533173,-0.822525024
-	rot = 0,0.707106769,0,0.707106888
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106769,0,0.707106888
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	modCost = 5
-	modMass = 0.0431919992
-	modSize = -3,-2.5,-0.159999996
-	sym = RO-B9ProcAMWing-Supersonic_4290511028
-	sym = RO-B9ProcAMWing-Supersonic_4290510906
-	sym = RO-B9ProcAMWing-Supersonic_4290510784
-	srfN = srfAttach,RFTank-II_4292141640
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = WingProcedural
-		isEnabled = True
-		isAttached = True
-		isSetToDefaultValues = True
-		sharedBaseLength = 1
-		sharedBaseWidthRoot = 1.5
-		sharedBaseWidthTip = 0.500100017
-		sharedBaseOffsetRoot = 0
-		sharedBaseOffsetTip = 0.75
-		sharedBaseThicknessRoot = 0.0399999991
-		sharedBaseThicknessTip = 0.0399999991
-		sharedEdgeTypeLeading = 2
-		sharedEdgeWidthLeadingRoot = 0.0399999991
-		sharedEdgeWidthLeadingTip = 0.0399999991
-		sharedEdgeTypeTrailing = 3
-		sharedEdgeWidthTrailingRoot = 0.0399999991
-		sharedEdgeWidthTrailingTip = 0.0399999991
-		sharedMaterialST = 1
-		sharedColorSTOpacity = 0
-		sharedColorSTHue = 0.100000001
-		sharedColorSTSaturation = 0.75
-		sharedColorSTBrightness = 0.600000024
-		sharedMaterialSB = 1
-		sharedColorSBOpacity = 0
-		sharedColorSBHue = 0.100000001
-		sharedColorSBSaturation = 0.75
-		sharedColorSBBrightness = 0.600000024
-		sharedMaterialET = 4
-		sharedColorETOpacity = 0
-		sharedColorETHue = 0.100000001
-		sharedColorETSaturation = 0.75
-		sharedColorETBrightness = 0.600000024
-		sharedMaterialEL = 4
-		sharedColorELOpacity = 0
-		sharedColorELHue = 0.100000001
-		sharedColorELSaturation = 0.75
-		sharedColorELBrightness = 0.600000024
-		fuelSelectedTankSetup = 0
-		stagingEnabled = True
-		mirrorTexturing = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARControllableSurface
-		isEnabled = True
-		pitchaxis = 50
-		yawaxis = 50
-		rollaxis = 30
-		pitchaxisDueToAoA = 0
-		brakeRudder = 0
-		maxdeflect = 5
-		isFlap = False
-		isSpoiler = False
-		flapDeflectionLevel = 0
-		maxdeflectFlap = 15
-		massMultiplier = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActivateSpoiler
-			{
-				actionGroup = Brakes
-			}
-			IncreaseDeflect
-			{
-				actionGroup = None
-			}
-			DecreaseDeflect
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = GeometryPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARAeroPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = RO-B9ProcAMWing-Supersonic_4290511028
-	partName = PartTapIn
-	pos = -0.814030707,3.62529182,-0.0083722854
-	attPos = 0,-1.15108967,0
-	attPos0 = -0.822524965,-3.28533173,-1.21770427E-07
-	rot = 0,1,0,8.42936956E-08
-	attRot = 0,0,0,1
-	attRot0 = 0,1,0,8.42936956E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	modCost = 5
-	modMass = 0.0431919992
-	modSize = -3,-2.5,-0.159999996
-	sym = RO-B9ProcAMWing-Supersonic_4290512480
-	sym = RO-B9ProcAMWing-Supersonic_4290510906
-	sym = RO-B9ProcAMWing-Supersonic_4290510784
-	srfN = srfAttach,RFTank-II_4292141640
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = WingProcedural
-		isEnabled = True
-		isAttached = True
-		isSetToDefaultValues = True
-		sharedBaseLength = 1
-		sharedBaseWidthRoot = 1.5
-		sharedBaseWidthTip = 0.500100017
-		sharedBaseOffsetRoot = 0
-		sharedBaseOffsetTip = 0.75
-		sharedBaseThicknessRoot = 0.0399999991
-		sharedBaseThicknessTip = 0.0399999991
-		sharedEdgeTypeLeading = 2
-		sharedEdgeWidthLeadingRoot = 0.0399999991
-		sharedEdgeWidthLeadingTip = 0.0399999991
-		sharedEdgeTypeTrailing = 3
-		sharedEdgeWidthTrailingRoot = 0.0399999991
-		sharedEdgeWidthTrailingTip = 0.0399999991
-		sharedMaterialST = 1
-		sharedColorSTOpacity = 0
-		sharedColorSTHue = 0.100000001
-		sharedColorSTSaturation = 0.75
-		sharedColorSTBrightness = 0.600000024
-		sharedMaterialSB = 1
-		sharedColorSBOpacity = 0
-		sharedColorSBHue = 0.100000001
-		sharedColorSBSaturation = 0.75
-		sharedColorSBBrightness = 0.600000024
-		sharedMaterialET = 4
-		sharedColorETOpacity = 0
-		sharedColorETHue = 0.100000001
-		sharedColorETSaturation = 0.75
-		sharedColorETBrightness = 0.600000024
-		sharedMaterialEL = 4
-		sharedColorELOpacity = 0
-		sharedColorELHue = 0.100000001
-		sharedColorELSaturation = 0.75
-		sharedColorELBrightness = 0.600000024
-		fuelSelectedTankSetup = 0
-		stagingEnabled = True
-		mirrorTexturing = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARControllableSurface
-		isEnabled = True
-		pitchaxis = 50
-		yawaxis = 50
-		rollaxis = 30
-		pitchaxisDueToAoA = 0
-		brakeRudder = 0
-		maxdeflect = 5
-		isFlap = False
-		isSpoiler = False
-		flapDeflectionLevel = 0
-		maxdeflectFlap = 15
-		massMultiplier = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActivateSpoiler
-			{
-				actionGroup = Brakes
-			}
-			IncreaseDeflect
-			{
-				actionGroup = None
-			}
-			DecreaseDeflect
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = GeometryPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARAeroPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = RO-B9ProcAMWing-Supersonic_4290510906
-	partName = PartTapIn
-	pos = 0.00849432778,3.62529182,0.814153075
-	attPos = 0,-1.15108967,0
-	attPos0 = 0,-3.28533173,0.822525024
-	rot = 0,0.707106829,0,-0.707106829
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106829,0,-0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	modCost = 5
-	modMass = 0.0431919992
-	modSize = -3,-2.5,-0.159999996
-	sym = RO-B9ProcAMWing-Supersonic_4290512480
-	sym = RO-B9ProcAMWing-Supersonic_4290511028
-	sym = RO-B9ProcAMWing-Supersonic_4290510784
-	srfN = srfAttach,RFTank-II_4292141640
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = WingProcedural
-		isEnabled = True
-		isAttached = True
-		isSetToDefaultValues = True
-		sharedBaseLength = 1
-		sharedBaseWidthRoot = 1.5
-		sharedBaseWidthTip = 0.500100017
-		sharedBaseOffsetRoot = 0
-		sharedBaseOffsetTip = 0.75
-		sharedBaseThicknessRoot = 0.0399999991
-		sharedBaseThicknessTip = 0.0399999991
-		sharedEdgeTypeLeading = 2
-		sharedEdgeWidthLeadingRoot = 0.0399999991
-		sharedEdgeWidthLeadingTip = 0.0399999991
-		sharedEdgeTypeTrailing = 3
-		sharedEdgeWidthTrailingRoot = 0.0399999991
-		sharedEdgeWidthTrailingTip = 0.0399999991
-		sharedMaterialST = 1
-		sharedColorSTOpacity = 0
-		sharedColorSTHue = 0.100000001
-		sharedColorSTSaturation = 0.75
-		sharedColorSTBrightness = 0.600000024
-		sharedMaterialSB = 1
-		sharedColorSBOpacity = 0
-		sharedColorSBHue = 0.100000001
-		sharedColorSBSaturation = 0.75
-		sharedColorSBBrightness = 0.600000024
-		sharedMaterialET = 4
-		sharedColorETOpacity = 0
-		sharedColorETHue = 0.100000001
-		sharedColorETSaturation = 0.75
-		sharedColorETBrightness = 0.600000024
-		sharedMaterialEL = 4
-		sharedColorELOpacity = 0
-		sharedColorELHue = 0.100000001
-		sharedColorELSaturation = 0.75
-		sharedColorELBrightness = 0.600000024
-		fuelSelectedTankSetup = 0
-		stagingEnabled = True
-		mirrorTexturing = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARControllableSurface
-		isEnabled = True
-		pitchaxis = 50
-		yawaxis = 50
-		rollaxis = 30
-		pitchaxisDueToAoA = 0
-		brakeRudder = 0
-		maxdeflect = 5
-		isFlap = False
-		isSpoiler = False
-		flapDeflectionLevel = 0
-		maxdeflectFlap = 15
-		massMultiplier = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActivateSpoiler
-			{
-				actionGroup = Brakes
-			}
-			IncreaseDeflect
-			{
-				actionGroup = None
-			}
-			DecreaseDeflect
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = GeometryPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARAeroPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = RO-B9ProcAMWing-Supersonic_4290510784
-	partName = PartTapIn
-	pos = 0.831019223,3.62529182,-0.00837196503
-	attPos = 0,-1.15108967,0
-	attPos0 = 0.822524965,-3.28533173,2.3515895E-08
-	rot = 0,8.42936956E-08,0,-1
-	attRot = 0,0,0,1
-	attRot0 = 0,8.42936956E-08,0,-1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	modCost = 5
-	modMass = 0.0431919992
-	modSize = -3,-2.5,-0.159999996
-	sym = RO-B9ProcAMWing-Supersonic_4290512480
-	sym = RO-B9ProcAMWing-Supersonic_4290511028
-	sym = RO-B9ProcAMWing-Supersonic_4290510906
-	srfN = srfAttach,RFTank-II_4292141640
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = WingProcedural
-		isEnabled = True
-		isAttached = True
-		isSetToDefaultValues = True
-		sharedBaseLength = 1
-		sharedBaseWidthRoot = 1.5
-		sharedBaseWidthTip = 0.500100017
-		sharedBaseOffsetRoot = 0
-		sharedBaseOffsetTip = 0.75
-		sharedBaseThicknessRoot = 0.0399999991
-		sharedBaseThicknessTip = 0.0399999991
-		sharedEdgeTypeLeading = 2
-		sharedEdgeWidthLeadingRoot = 0.0399999991
-		sharedEdgeWidthLeadingTip = 0.0399999991
-		sharedEdgeTypeTrailing = 3
-		sharedEdgeWidthTrailingRoot = 0.0399999991
-		sharedEdgeWidthTrailingTip = 0.0399999991
-		sharedMaterialST = 1
-		sharedColorSTOpacity = 0
-		sharedColorSTHue = 0.100000001
-		sharedColorSTSaturation = 0.75
-		sharedColorSTBrightness = 0.600000024
-		sharedMaterialSB = 1
-		sharedColorSBOpacity = 0
-		sharedColorSBHue = 0.100000001
-		sharedColorSBSaturation = 0.75
-		sharedColorSBBrightness = 0.600000024
-		sharedMaterialET = 4
-		sharedColorETOpacity = 0
-		sharedColorETHue = 0.100000001
-		sharedColorETSaturation = 0.75
-		sharedColorETBrightness = 0.600000024
-		sharedMaterialEL = 4
-		sharedColorELOpacity = 0
-		sharedColorELHue = 0.100000001
-		sharedColorELSaturation = 0.75
-		sharedColorELBrightness = 0.600000024
-		fuelSelectedTankSetup = 0
-		stagingEnabled = True
-		mirrorTexturing = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARControllableSurface
-		isEnabled = True
-		pitchaxis = 50
-		yawaxis = 50
-		rollaxis = 30
-		pitchaxisDueToAoA = 0
-		brakeRudder = 0
-		maxdeflect = 5
-		isFlap = False
-		isSpoiler = False
-		flapDeflectionLevel = 0
-		maxdeflectFlap = 15
-		massMultiplier = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActivateSpoiler
-			{
-				actionGroup = Brakes
-			}
-			IncreaseDeflect
-			{
-				actionGroup = None
-			}
-			DecreaseDeflect
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = GeometryPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARAeroPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = KzFlatBoattail_4284580112
-	partName = PartTapIn
-	pos = 0.00849431753,4.38902473,-0.00837196503
-	attPos = 0,0,0
-	attPos0 = 0,-4.00000477,0
-	rot = 0,0,-1,0
-	attRot = 0,0,-0.99999994,0
-	attRot0 = 0,0,-1,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	modCost = 5.6664176
-	modMass = 0.0313328356
-	modSize = 0,0,0
-	link = RO-RE-RD100_4280925842
-	link = KzProcFairingFuselage2_4280802070
-	link = KzProcFairingFuselage2_4284571532
-	link = KzProcFairingFuselage2_4284571450
-	link = KzProcFairingFuselage2_4284571368
-	attN = bottom,RFTank-II_4292141640
-	attN = top,RO-RE-RD100_4280925842
-	attN = connect01,KzProcFairingFuselage2_4284571450
-	attN = connect02,KzProcFairingFuselage2_4284571532
-	attN = connect03,KzProcFairingFuselage2_4280802070
-	attN = connect04,KzProcFairingFuselage2_4284571368
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingAdapter
-		isEnabled = True
-		topNodeDecouplesWhenFairingsGone = False
-		extraHeight = 0
-		baseSize = 1.6500001
-		topSize = 1.6500001
-		height = 2
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralFairingBase
-		isEnabled = True
-		extraRadius = 0
-		autoStrutSides = False
-		autoShape = True
-		manualMaxSize = 1.51800013
-		manualCylStart = 0
-		manualCylEnd = 2
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KzNodeNumberTweaker
-		isEnabled = True
-		numNodes = 4
-		radius = 0.825000048
-		showInterstageNodes = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToggleCrossfeed
-		isEnabled = True
-		crossfeedStatus = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-			}
-			EnableAction
-			{
-				actionGroup = None
-				active = False
-			}
-			DisableAction
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = GeometryPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARAeroPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToolingGeneric
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = RO-RE-RD100_4280925842
-	partName = PartTapIn
-	pos = 0.00849431753,2.08312607,-0.00837196503
-	attPos = 0,0.161599159,0
-	attPos0 = 0,2.30590057,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,1,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 1
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 1
-	sepI = -1
-	attm = 0
-	modCost = 300
-	modMass = -0.0180263519
-	modSize = 0,0,0
-	attN = top,KzFlatBoattail_4284580112
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesRF
-		isEnabled = True
-		ignitions = 1
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		Ullage
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		isJettisoned = True
-		shroudHideOverride = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		gimbalActive = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-			TogglePitchAction
-			{
-				actionGroup = None
-			}
-			ToggleYawAction
-			{
-				actionGroup = None
-			}
-			ToggleRollAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		animState = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = EngineGroupModule
-		isEnabled = True
-		EngineGroupId = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = GeometryPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARAeroPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleEngineConfigs
-		isEnabled = True
-		configuration = RD-103
-		techLevel = -1
-		thrustRating = maxThrust
-		modded = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTagEngineLiquidTurbo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightInterop
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightCore
-		isEnabled = True
-		operatingTime = 0
-		lastMET = 0
-		initialized = False
-		currentFlightData = 0
-		initialFlightData = 0
-		missionStartTime = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FlightDataRecorder_Engine
-		isEnabled = True
-		lastRecordedMet = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightReliability
-		isEnabled = True
-		lastCheck = 0
-		lastReliability = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightReliability_EngineCycle
-		isEnabled = True
-		engineOperatingTime = 0
-		previousOperatingTime = 0
-		lastCheck = 0
-		lastReliability = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_ShutdownEngine
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_IgnitionFail
-		isEnabled = True
-		numIgnitions = 0
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_ReducedMaxThrust
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_EnginePerformanceLoss
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_Explode
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightCore
-		isEnabled = True
-		operatingTime = 0
-		lastMET = 0
-		initialized = False
-		currentFlightData = 0
-		initialFlightData = 0
-		missionStartTime = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FlightDataRecorder_Engine
-		isEnabled = True
-		lastRecordedMet = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightReliability
-		isEnabled = True
-		lastCheck = 0
-		lastReliability = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightReliability_EngineCycle
-		isEnabled = True
-		engineOperatingTime = 0
-		previousOperatingTime = 0
-		lastCheck = 0
-		lastReliability = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_ShutdownEngine
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_IgnitionFail
-		isEnabled = True
-		numIgnitions = 0
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_ReducedMaxThrust
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_EnginePerformanceLoss
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_Explode
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightCore
-		isEnabled = True
-		operatingTime = 0
-		lastMET = 0
-		initialized = False
-		currentFlightData = 0
-		initialFlightData = 0
-		missionStartTime = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FlightDataRecorder_Engine
-		isEnabled = True
-		lastRecordedMet = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightReliability
-		isEnabled = True
-		lastCheck = 0
-		lastReliability = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightReliability_EngineCycle
-		isEnabled = True
-		engineOperatingTime = 0
-		previousOperatingTime = 0
-		lastCheck = 0
-		lastReliability = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_ShutdownEngine
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_IgnitionFail
-		isEnabled = True
-		numIgnitions = 0
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_ReducedMaxThrust
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_EnginePerformanceLoss
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_Explode
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightCore
-		isEnabled = True
-		operatingTime = 0
-		lastMET = 0
-		initialized = False
-		currentFlightData = 0
-		initialFlightData = 0
-		missionStartTime = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FlightDataRecorder_Engine
-		isEnabled = True
-		lastRecordedMet = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightReliability
-		isEnabled = True
-		lastCheck = 0
-		lastReliability = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightReliability_EngineCycle
-		isEnabled = True
-		engineOperatingTime = 0
-		previousOperatingTime = 0
-		lastCheck = 0
-		lastReliability = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_ShutdownEngine
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_IgnitionFail
-		isEnabled = True
-		numIgnitions = 0
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_ReducedMaxThrust
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_EnginePerformanceLoss
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_Explode
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightCore
-		isEnabled = True
-		operatingTime = 0
-		lastMET = 0
-		initialized = False
-		currentFlightData = 0
-		initialFlightData = 0
-		missionStartTime = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FlightDataRecorder_Engine
-		isEnabled = True
-		lastRecordedMet = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightReliability
-		isEnabled = True
-		lastCheck = 0
-		lastReliability = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightReliability_EngineCycle
-		isEnabled = True
-		engineOperatingTime = 0
-		previousOperatingTime = 0
-		lastCheck = 0
-		lastReliability = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_ShutdownEngine
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_IgnitionFail
-		isEnabled = True
-		numIgnitions = 0
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_ReducedMaxThrust
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_EnginePerformanceLoss
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TestFlightFailure_Explode
-		isEnabled = True
-		failed = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = KzProcFairingFuselage2_4280802070
-	partName = PartTapIn
-	pos = 0.833494365,4.85107422,-0.00837203674
-	attPos = 0,0,0
-	attPos0 = -0.825000048,-0.462049484,-7.17118382E-08
-	rot = 0,0,-1,0
-	attRot = 0,0,-0.99999994,0
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	modCost = -0.213125184
-	modMass = 0.00786874816
-	modSize = 0,0,0
-	sym = KzProcFairingFuselage2_4284571532
-	sym = KzProcFairingFuselage2_4284571450
-	sym = KzProcFairingFuselage2_4284571368
-	attN = connect,KzFlatBoattail_4284580112
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 6
-		numSideParts = 4
-		baseRad = 0.759000063
-		maxRad = 0.759000063
-		cylStart = 0
-		cylEnd = 2
-		topRad = 0.759000063
-		inlineHeight = 2
-		sideThickness = 0.0659999996
-		meshPos = (0.825000048, 0.462049484, 7.17118382E-08)
-		meshRot = (0, 1, 0, -4.37113883E-08)
-		shapeLock = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = GeometryPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARAeroPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 0
-		selectedTextureURL = ProceduralFairings-ForEverything/Textures/fairing1
-		selectedMapURL = ProceduralFairings-ForEverything/Textures/AtlasBumpNRM
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToggleCrossfeed
-		isEnabled = True
-		crossfeedStatus = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-			}
-			EnableAction
-			{
-				actionGroup = None
-				active = False
-			}
-			DisableAction
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToolingPFSide
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSeeThroughObject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = KzProcFairingFuselage2_4284571532
-	partName = PartTapIn
-	pos = 0.00849435385,4.85107422,0.816628098
-	attPos = 0,0,0
-	attPos0 = -3.63215804E-08,-0.462049484,0.825000048
-	rot = 0.707106829,0,-0.707106829,0
-	attRot = 0,0,-0.99999994,0
-	attRot0 = 0,0.707106829,0,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	modCost = -0.213125184
-	modMass = 0.00786874816
-	modSize = 0,0,0
-	sym = KzProcFairingFuselage2_4280802070
-	sym = KzProcFairingFuselage2_4284571450
-	sym = KzProcFairingFuselage2_4284571368
-	attN = connect,KzFlatBoattail_4284580112
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 6
-		numSideParts = 4
-		baseRad = 0.759000063
-		maxRad = 0.759000063
-		cylStart = 0
-		cylEnd = 2
-		topRad = 0.759000063
-		inlineHeight = 2
-		sideThickness = 0.0659999996
-		meshPos = (0.824999809, 0.462049186, 1.78813863E-07)
-		meshRot = (0, -1, 0, 0)
-		shapeLock = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = GeometryPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARAeroPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 0
-		selectedTextureURL = ProceduralFairings-ForEverything/Textures/fairing1
-		selectedMapURL = ProceduralFairings-ForEverything/Textures/AtlasBumpNRM
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToggleCrossfeed
-		isEnabled = True
-		crossfeedStatus = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-			}
-			EnableAction
-			{
-				actionGroup = None
-				active = False
-			}
-			DisableAction
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToolingPFSide
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSeeThroughObject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = KzProcFairingFuselage2_4284571450
-	partName = PartTapIn
-	pos = -0.81650573,4.85107422,-0.00837196503
-	attPos = 0,0,0
-	attPos0 = 0.825000048,-0.462049484,0
-	rot = 1,0,4.37113883E-08,0
-	attRot = 0,0,-0.99999994,0
-	attRot0 = 0,1,0,-4.37113883E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	modCost = -0.213125184
-	modMass = 0.00786874816
-	modSize = 0,0,0
-	sym = KzProcFairingFuselage2_4280802070
-	sym = KzProcFairingFuselage2_4284571532
-	sym = KzProcFairingFuselage2_4284571368
-	attN = connect,KzFlatBoattail_4284580112
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 6
-		numSideParts = 4
-		baseRad = 0.759000063
-		maxRad = 0.759000063
-		cylStart = 0
-		cylEnd = 2
-		topRad = 0.759000063
-		inlineHeight = 2
-		sideThickness = 0.0659999996
-		meshPos = (0.825000048, 0.462049484, 7.21237967E-08)
-		meshRot = (0, -1, 0, -4.37113883E-08)
-		shapeLock = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = GeometryPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARAeroPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 0
-		selectedTextureURL = ProceduralFairings-ForEverything/Textures/fairing1
-		selectedMapURL = ProceduralFairings-ForEverything/Textures/AtlasBumpNRM
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToggleCrossfeed
-		isEnabled = True
-		crossfeedStatus = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-			}
-			EnableAction
-			{
-				actionGroup = None
-				active = False
-			}
-			DisableAction
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToolingPFSide
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSeeThroughObject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = KzProcFairingFuselage2_4284571368
-	partName = PartTapIn
-	pos = 0.00849430729,4.85107422,-0.833371997
-	attPos = 0,0,0
-	attPos0 = 1.02445483E-08,-0.462049484,-0.825000048
-	rot = 0.707106829,0,0.707106829,0
-	attRot = 0,0,-0.99999994,0
-	attRot0 = 0,0.707106829,0,-0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	modCost = -0.213125184
-	modMass = 0.00786874816
-	modSize = 0,0,0
-	sym = KzProcFairingFuselage2_4280802070
-	sym = KzProcFairingFuselage2_4284571532
-	sym = KzProcFairingFuselage2_4284571450
-	attN = connect,KzFlatBoattail_4284580112
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 6
-		numSideParts = 4
-		baseRad = 0.759000063
-		maxRad = 0.759000063
-		cylStart = 0
-		cylEnd = 2
-		topRad = 0.759000063
-		inlineHeight = 2
-		sideThickness = 0.0659999996
-		meshPos = (0.824999809, 0.462049186, -1.1920924E-07)
-		meshRot = (0, -1, 0, 0)
-		shapeLock = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		currentKeyset = 1
-		groupNames = ‣007Trig Sci (rep)‣010Clr Sci (rep)‣050RANGE SAFETY
-		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
-		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
-		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-		hasData = true
-		focusFlightID = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = GeometryPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARAeroPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FARPartModule
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FStextureSwitch2
-		isEnabled = True
-		selectedTexture = 0
-		selectedTextureURL = ProceduralFairings-ForEverything/Textures/fairing1
-		selectedMapURL = ProceduralFairings-ForEverything/Textures/AtlasBumpNRM
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToggleCrossfeed
-		isEnabled = True
-		crossfeedStatus = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-			}
-			EnableAction
-			{
-				actionGroup = None
-				active = False
-			}
-			DisableAction
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleToolingPFSide
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAeroReentry
-		isEnabled = True
-		dead = False
-		crashTolerance = 8
-		internalDamage = 0
-		stagingEnabled = True
-		damageCube = 0, 0, 0, 0, 0, 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSeeThroughObject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleShowInfo
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
