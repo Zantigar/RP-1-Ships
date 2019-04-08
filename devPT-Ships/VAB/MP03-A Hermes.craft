@@ -2,7 +2,7 @@ ship = MP03-A Hermes
 version = 1.3.1
 description = 
 type = VAB
-size = 6.82556343,23.4299469,2.20000768
+size = 6.82556152,23.4299469,2.20000315
 PART
 {
 	part = mk1pod_4281231772
@@ -2025,6 +2025,9 @@ PART
 			MechJebModuleCustomInfoWindow
 			{
 			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
 			MechJebModuleWarpController
 			{
 				unlockParts = 
@@ -3256,7 +3259,7 @@ PART
 	sqor = -1
 	sepI = 0
 	attm = 0
-	modCost = 48.3265152
+	modCost = 2.12651277
 	modMass = -0.995005488
 	modSize = 0,0,0
 	link = microEngine_4277252812
@@ -3962,6 +3965,20 @@ PART
 		TANK
 		{
 			name = AK27
+			note = 
+			utilization = 1
+			mass = 4.50000007E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MON1
 			note = 
 			utilization = 1
 			mass = 4.50000007E-05
@@ -5136,7 +5153,7 @@ PART
 		SASServiceLevel = 0
 		hasScienceContainer = False
 		systemEnabled = True
-		setToDebrisOnStage = False
+		setToDebrisOnStage = True
 		stagingEnabled = True
 		EVENTS
 		{
@@ -6145,6 +6162,20 @@ PART
 		TANK
 		{
 			name = AK27
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MON1
 			note = 
 			utilization = 1
 			mass = 1.6E-05
@@ -9947,6 +9978,20 @@ PART
 		}
 		TANK
 		{
+			name = MON1
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = MON3
 			note = 
 			utilization = 1
@@ -10098,7 +10143,7 @@ PART
 	pos = 2.30677176,3.95579147,-1.09368443E-06
 	attPos = 0,0,0
 	attPos0 = -8.45829795E-11,-0.500006676,-6.93889101E-18
-	rot = 2.03503845E-07,6.32731512E-09,-1.00000012,-0.000133533205
+	rot = 2.03503845E-07,6.32732089E-09,-1.00000012,-0.000133533205
 	attRot = 0,0,-0.99999994,0
 	attRot0 = 0.707106829,0,0.707106829,0
 	mir = 1,1,1
@@ -10360,10 +10405,10 @@ PART
 {
 	part = KzProcFairingFuselage2_4279067202
 	partName = PartTapIn
-	pos = 3.40689564,4.40489769,-8.06228513E-07
+	pos = 3.40689278,4.40489769,-5.67810389E-07
 	attPos = 0,0,0
 	attPos0 = -0.825000048,-0.462050438,-7.17118382E-08
-	rot = 2.03503845E-07,6.32730535E-09,-1.00000012,-0.000133533205
+	rot = 2.03503845E-07,6.32731245E-09,-1.00000012,-0.000133533205
 	attRot = 0,0,-0.99999994,0
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -10622,10 +10667,10 @@ PART
 {
 	part = KzProcFairingFuselage2_4279067120
 	partName = PartTapIn
-	pos = 1.20688856,4.40548515,-1.77316838E-06
+	pos = 1.20689118,4.40548515,-1.77316804E-06
 	attPos = 0,0,0
 	attPos0 = 0.825000048,-0.462050438,0
-	rot = 1.00000012,-0.000133533205,2.92910812E-07,-6.31546637E-09
+	rot = 1.00000012,-0.000133533205,2.92910812E-07,-6.31546859E-09
 	attRot = 0,0,-0.99999994,0
 	attRot0 = 0,1,0,-4.37113883E-08
 	mir = 1,1,1
@@ -10884,10 +10929,10 @@ PART
 {
 	part = bluedog.Atlas.LR89_4279010172
 	partName = PartTapIn
-	pos = 2.30661154,3.35553169,-1.10131487E-06
+	pos = 2.30661154,3.35553265,-1.10131123E-06
 	attPos = 0,0,0
 	attPos0 = 0,0.574960709,0
-	rot = 6.32738306E-09,-2.03503845E-07,-0.000133533205,1.00000012
+	rot = 6.32738661E-09,-2.03503845E-07,-0.000133533205,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,1,0
 	mir = 1,1,1
@@ -12321,7 +12366,7 @@ PART
 {
 	part = proceduralNoseCone_4278526770
 	partName = PartTapIn
-	pos = 2.31290913,16.9559135,-2.53354983E-06
+	pos = 2.31290913,16.9559135,-2.53308417E-06
 	attPos = 0,0,0
 	attPos0 = -6.62979517E-07,4.81252337,-0.00228062016
 	rot = -2.2758688E-10,5.1132929E-09,0.000138462783,1
@@ -12758,7 +12803,7 @@ PART
 	pos = -2.30833292,9.95580006,-1.10007295E-06
 	attPos = -0.600178123,-0.238222688,-6.57487533E-07
 	attPos0 = -0.609135509,-0.126407623,-8.03343028E-08
-	rot = 9.44266285E-05,-0.707106769,-9.44171115E-05,-0.707106829
+	rot = 9.44266212E-05,-0.707106769,-9.44171188E-05,-0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 0,0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -13494,6 +13539,20 @@ PART
 		}
 		TANK
 		{
+			name = MON1
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = MON3
 			note = 
 			utilization = 1
@@ -13642,10 +13701,10 @@ PART
 {
 	part = KzFlatBoattail_4291332090
 	partName = PartTapIn
-	pos = -2.30676055,3.95579147,-9.77389618E-07
+	pos = -2.30676055,3.95579147,-9.77393256E-07
 	attPos = 0,0,0
 	attPos0 = -8.45829795E-11,-0.500006676,-6.93889101E-18
-	rot = -1.00000012,-0.000133533147,-3.0880409E-07,-6.5172685E-09
+	rot = -1,-0.000133533133,-3.0880409E-07,-6.51726673E-09
 	attRot = 0,0,-0.99999994,0
 	attRot0 = 0.707106829,0,0.707106829,0
 	mir = 1,1,1
@@ -13907,10 +13966,10 @@ PART
 {
 	part = KzProcFairingFuselage2_4291332006
 	partName = PartTapIn
-	pos = -3.40688229,4.40489769,-2.14297825E-06
+	pos = -3.40688086,4.40489769,-1.66614109E-06
 	attPos = 0,0,0
 	attPos0 = -0.825000048,-0.462050438,-7.17118382E-08
-	rot = -1.00000012,-0.000133533147,-3.0880409E-07,-6.5172685E-09
+	rot = -1,-0.000133533133,-3.0880409E-07,-6.51726673E-09
 	attRot = 0,0,-0.99999994,0
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -14169,10 +14228,10 @@ PART
 {
 	part = KzProcFairingFuselage2_4291331924
 	partName = PartTapIn
-	pos = -1.20688081,4.40548515,6.21419076E-08
+	pos = -1.20688069,4.40548515,-1.76276785E-07
 	attPos = 0,0,0
 	attPos0 = 0.825000048,-0.462050438,0
-	rot = 3.0880409E-07,-6.51736221E-09,-1.00000012,0.000133533147
+	rot = 3.0880409E-07,-6.51736132E-09,-1,0.000133533133
 	attRot = 0,0,-0.99999994,0
 	attRot0 = 0,1,0,-4.37113883E-08
 	mir = 1,1,1
@@ -14431,10 +14490,10 @@ PART
 {
 	part = bluedog.Atlas.LR89_4291331842
 	partName = PartTapIn
-	pos = -2.30660057,3.35553169,-9.69520443E-07
+	pos = -2.30660009,3.35553169,-9.69520443E-07
 	attPos = 0,0,0
 	attPos0 = 0,0.574960709,0
-	rot = -0.000133533147,1.00000012,-6.51734844E-09,3.0880409E-07
+	rot = -0.000133533133,1,-6.51734844E-09,3.0880409E-07
 	attRot = 0,0,0,1
 	attRot0 = 0,0,1,0
 	mir = 1,1,1
@@ -15868,10 +15927,10 @@ PART
 {
 	part = proceduralNoseCone_4291331446
 	partName = PartTapIn
-	pos = -2.31209803,16.9559288,4.52454515E-07
+	pos = -2.31209803,16.9559288,4.51988853E-07
 	attPos = 0,0,0
 	attPos0 = -6.62979517E-07,4.81252337,-0.00228062016
-	rot = 0.000138462783,1,2.17649662E-10,4.0582286E-08
+	rot = 0.000138462783,1,2.27938321E-10,4.0582286E-08
 	attRot = 0,0,0,1
 	attRot0 = -0.000192325198,-0.707106829,-0.000192334526,-0.707106709
 	mir = 1,1,1
@@ -18162,7 +18221,7 @@ PART
 	sqor = -1
 	sepI = -1
 	attm = 0
-	modCost = 160.903076
+	modCost = 120.403084
 	modMass = -0.923532009
 	modSize = 0,0,0
 	link = longAntenna_4282479472
@@ -18896,6 +18955,20 @@ PART
 		}
 		TANK
 		{
+			name = MON1
+			note = 
+			utilization = 1
+			mass = 0.000216
+			cost = 0.00249999994
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = MON3
 			note = 
 			utilization = 1
@@ -19363,7 +19436,7 @@ PART
 {
 	part = longAntenna_4282479472
 	partName = PartTapIn
-	pos = 2.75470211E-06,19.9727478,-1.9302729E-06
+	pos = 2.74044987E-06,19.9727478,-1.9302729E-06
 	attPos = 0,-0.256788254,0
 	attPos0 = -1.55500857E-08,0.25,0
 	rot = 0,0,0,1
