@@ -1287,7 +1287,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 			RetractAction
 			{
@@ -1317,6 +1317,17 @@ PART
 		}
 		ACTIONS
 		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = 
+			activated = 0
+			partModule = ModuleDeployableSolarPanel
+			actionGuiName = Extend Solar Panel
+			actionName = ExtendAction
+			pmIndex = 0
+			custom1 = NA
 		}
 		UPGRADESAPPLIED
 		{
@@ -1498,7 +1509,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 			RetractAction
 			{
@@ -1528,6 +1539,17 @@ PART
 		}
 		ACTIONS
 		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = 
+			activated = 0
+			partModule = ModuleDeployableSolarPanel
+			actionGuiName = Extend Solar Panel
+			actionName = ExtendAction
+			pmIndex = 0
+			custom1 = NA
 		}
 		UPGRADESAPPLIED
 		{
@@ -5453,7 +5475,7 @@ PART
 	sqor = -1
 	sepI = -1
 	attm = 0
-	modCost = 178.345078
+	modCost = 178.345139
 	modMass = -0.717996001
 	modSize = 0,0,0
 	link = engineLargeSkipper_4291202782
@@ -5695,8 +5717,8 @@ PART
 			temperature = 90.1500015
 			fillable = True
 			techRequired = 
-			amount = 1837.3506372262343
-			maxAmount = 1837.3506372262343
+			amount = 1837.3506372262345
+			maxAmount = 1837.3506372262345
 		}
 		TANK
 		{
@@ -5723,8 +5745,8 @@ PART
 			temperature = 20.1499996
 			fillable = True
 			techRequired = materialsScienceHuman
-			amount = 5918.4563627737662
-			maxAmount = 5918.4563627737662
+			amount = 5918.4563627737671
+			maxAmount = 5918.4563627737671
 		}
 		TANK
 		{
@@ -6314,8 +6336,8 @@ PART
 	RESOURCE
 	{
 		name = LqdHydrogen
-		amount = 5918.4563627737662
-		maxAmount = 5918.4563627737662
+		amount = 5918.4563627737671
+		maxAmount = 5918.4563627737671
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -6325,8 +6347,8 @@ PART
 	RESOURCE
 	{
 		name = LqdOxygen
-		amount = 1837.3506372262343
-		maxAmount = 1837.3506372262343
+		amount = 1837.3506372262345
+		maxAmount = 1837.3506372262345
 		flowState = True
 		isTweakable = True
 		hideFlow = False

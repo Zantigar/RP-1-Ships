@@ -1,4 +1,4 @@
-ship = OS07-B Tureen-II
+ship = OS07-C Tureen-II-W
 version = 1.3.1
 description = 
 type = VAB
@@ -7,7 +7,7 @@ PART
 {
 	part = proceduralAvionics_4291339204
 	partName = PartTapIn
-	pos = 0.0947054476,30.8772526,-0.0227236748
+	pos = 0.0947054476,31.477253,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 0.0947054476,32.4272537,-0.0227236748
 	rot = 0,0,0,1
@@ -1231,7 +1231,7 @@ PART
 {
 	part = RFTank-III_4291291394
 	partName = PartTapIn
-	pos = 0.0947054476,29.866745,-0.0227236748
+	pos = 0.0947054476,30.4667454,-0.0227236748
 	attPos = 0,-0.028801918,0
 	attPos0 = 0,-1.01001167,0
 	rot = 0,0,0,1
@@ -1248,7 +1248,7 @@ PART
 	sqor = -1
 	sepI = -1
 	attm = 0
-	modCost = 186.366714
+	modCost = 186.366699
 	modMass = -0.710142016
 	modSize = 0,0,0
 	link = engineLargeSkipper_4291202782
@@ -1276,7 +1276,7 @@ PART
 		textureSet = SaturnSingleTank
 		capTextureIndex = 0
 		shapeName = Cylinder
-		moduleCost = 1.34235883
+		moduleCost = 1.34235859
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1293,7 +1293,7 @@ PART
 		name = ProceduralShapeCylinder
 		isEnabled = True
 		diameter = 2.5
-		length = 2.00000024
+		length = 2
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1468,11 +1468,11 @@ PART
 		isEnabled = True
 		type = Tank-III
 		utilization = 84
-		mass = 0.289858013
+		mass = 0.289857984
 		_numberOfAddedMLILayers = 10
 		partPrevTemperature = -1
 		stagingEnabled = True
-		volume = 8246.6816999999992
+		volume = 8246.6808999999994
 		EVENTS
 		{
 		}
@@ -1490,8 +1490,8 @@ PART
 			temperature = 90.1500015
 			fillable = True
 			techRequired = 
-			amount = 1953.6388510566246
-			maxAmount = 1953.6388510566246
+			amount = 1953.6386615366289
+			maxAmount = 1953.6386615366289
 		}
 		TANK
 		{
@@ -1518,8 +1518,8 @@ PART
 			temperature = 20.1499996
 			fillable = True
 			techRequired = materialsScienceHuman
-			amount = 6293.0428489433762
-			maxAmount = 6293.0428489433762
+			amount = 6293.0422384633721
+			maxAmount = 6293.0422384633721
 		}
 		TANK
 		{
@@ -2109,8 +2109,8 @@ PART
 	RESOURCE
 	{
 		name = LqdHydrogen
-		amount = 6293.0428489433762
-		maxAmount = 6293.0428489433762
+		amount = 6293.0422384633721
+		maxAmount = 6293.0422384633721
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2120,8 +2120,8 @@ PART
 	RESOURCE
 	{
 		name = LqdOxygen
-		amount = 1953.6388510566246
-		maxAmount = 1953.6388510566246
+		amount = 1953.6386615366289
+		maxAmount = 1953.6386615366289
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2133,7 +2133,7 @@ PART
 {
 	part = engineLargeSkipper_4291202782
 	partName = PartTapIn
-	pos = 0.0947054476,28.856739,-0.0227236748
+	pos = 0.0947054476,29.4567394,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 0,-1.01000595,0
 	rot = 0,0,0,1
@@ -4064,7 +4064,7 @@ PART
 {
 	part = KzResizableFairingBaseRing_4291678026
 	partName = PartTapIn
-	pos = 0.0947054476,26.4597397,-0.0227236748
+	pos = 0.0947054476,27.0597401,-0.0227236748
 	attPos = 0,-0.0809993744,0
 	attPos0 = 0,-2.39699936,0
 	rot = 0,0,0,1
@@ -4344,7 +4344,7 @@ PART
 {
 	part = proceduralAvionics_4292065842
 	partName = PartTapIn
-	pos = 0.0947054476,26.4242401,-0.0227236748
+	pos = 0.0947054476,27.0242405,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 0,-0.0180053711,0
 	rot = 0,0,0,1
@@ -5048,7 +5048,7 @@ PART
 {
 	part = RFSM-I_4292065732
 	partName = PartTapIn
-	pos = 0.0947054178,26.3887405,-0.929682493
+	pos = 0.0947054178,26.9887409,-0.929682493
 	attPos = 0,0,0
 	attPos0 = -6.51925802E-08,-0.017999649,-0.90695858
 	rot = 0,0,1,0
@@ -6201,7 +6201,7 @@ PART
 {
 	part = RFSM-I_4292065654
 	partName = PartTapIn
-	pos = 0.0947054699,26.3887405,0.884235144
+	pos = 0.0947054699,26.9887409,0.884235144
 	attPos = 0,0,0
 	attPos0 = 1.45286322E-07,-0.017999649,0.90695858
 	rot = 1,0,-4.37113883E-08,0
@@ -7354,7 +7354,7 @@ PART
 {
 	part = RFTank-III_4280966234
 	partName = PartTapIn
-	pos = 0.0947054476,22.8887291,-0.0227236748
+	pos = 0.0947054476,23.4887295,-0.0227236748
 	attPos = 0,0.409582138,0
 	attPos0 = 0,-3.53551102,0
 	rot = 0,0,0,1
@@ -8260,7 +8260,7 @@ PART
 {
 	part = RV105.2xlateral.2xfront.half_4291695518
 	partName = PartTapIn
-	pos = 0.0947053879,19.3887367,-1.31567717
+	pos = 0.0947053879,19.9887371,-1.31567717
 	attPos = 0,0,0
 	attPos0 = -5.40167093E-08,-0.299999237,-0.61795336
 	rot = 0.5,0.5,0.5,0.5
@@ -8480,7 +8480,7 @@ PART
 {
 	part = RV105.2xlateral.2xfront.half_4291694104
 	partName = PartTapIn
-	pos = -1.19824803,19.3887367,-0.0227217115
+	pos = -1.19824803,19.9887371,-0.0227217115
 	attPos = 0,0,0
 	attPos0 = -0.6179533,-0.299999237,1.67638063E-08
 	rot = 0.707106829,0.707106829,0,0
@@ -8700,7 +8700,7 @@ PART
 {
 	part = RV105.2xlateral.2xfront.half_4291694014
 	partName = PartTapIn
-	pos = 0.0947054625,19.3887367,1.27022982
+	pos = 0.0947054625,19.9887371,1.27022982
 	attPos = 0,0,0
 	attPos0 = 1.08033419E-07,-0.299999237,0.61795336
 	rot = 0.5,0.5,-0.50000006,-0.50000006
@@ -8920,7 +8920,7 @@ PART
 {
 	part = RV105.2xlateral.2xfront.half_4291693924
 	partName = PartTapIn
-	pos = 1.38765895,19.3887367,-0.0227236748
+	pos = 1.38765895,19.9887371,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 0.6179533,-0.299999237,-9.12696123E-08
 	rot = 0,0,-0.707106829,-0.707106829
@@ -9140,7 +9140,7 @@ PART
 {
 	part = RFTank-III_4291641376
 	partName = PartTapIn
-	pos = -0.616992533,19.4404984,-0.927609086
+	pos = -0.616992533,20.0404987,-0.927609086
 	attPos = 0,0,0
 	attPos0 = -0.711698055,-0.248233795,-0.904885352
 	rot = -5.0411022E-09,-0.130526975,0.991444767,3.82907466E-08
@@ -10082,7 +10082,7 @@ PART
 {
 	part = RFTank-III_4291606742
 	partName = PartTapIn
-	pos = 0.806403875,19.4405003,0.882161319
+	pos = 0.806403875,20.0405006,0.882161379
 	attPos = 0,0,0
 	attPos0 = 0.711698115,-0.248233795,0.904885292
 	rot = 0.991444767,4.39962626E-08,-3.82963243E-08,0.130526975
@@ -11024,7 +11024,7 @@ PART
 {
 	part = engineLargeSkipper_4285412332
 	partName = PartTapIn
-	pos = -0.505178332,19.3787365,-0.0227227639
+	pos = -0.505178332,19.9787369,-0.0227227639
 	attPos = 0,0,0
 	attPos0 = -0.599883735,-1.75999641,3.53902578E-08
 	rot = 0,0,0,1
@@ -12954,7 +12954,7 @@ PART
 {
 	part = engineLargeSkipper_4251248930
 	partName = PartTapIn
-	pos = 0.694589257,19.3787365,-0.0227236748
+	pos = 0.694589257,19.9787369,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 0.599883735,-1.75999641,-8.7544322E-08
 	rot = 0,1,0,-4.37113883E-08
@@ -14884,7 +14884,7 @@ PART
 {
 	part = SnubOtron_4285629002
 	partName = PartTapIn
-	pos = 0.0947053581,27.0117378,-1.16983819
+	pos = 0.0947053581,27.6117382,-1.16983819
 	attPos = 0,0,0
 	attPos0 = -8.94069672E-08,0.552000046,-1.14711452
 	rot = 0.793353438,-6.96438462E-09,-9.1687774E-10,-0.608761311
@@ -15293,7 +15293,7 @@ PART
 {
 	part = SnubOtron_4285628174
 	partName = PartTapIn
-	pos = 0.0947056264,27.0117378,1.12439084
+	pos = 0.0947056264,27.6117382,1.12439084
 	attPos = 0,0,0
 	attPos0 = 1.78813934E-07,0.552000046,1.14711452
 	rot = -3.5595459E-08,-0.608761311,-0.793353438,3.35741852E-08
@@ -15702,7 +15702,7 @@ PART
 {
 	part = RCSBlockQuarter_4291187878
 	partName = PartTapIn
-	pos = 0.0952332541,28.9580269,-1.29468071
+	pos = 0.0952332541,29.5580273,-1.29468071
 	attPos = 0,0,0
 	attPos0 = 0.000527963042,-0.908718109,-1.27195692
 	rot = 0.49999997,0.50000006,0.50000006,-0.49999997
@@ -15922,7 +15922,7 @@ PART
 {
 	part = RCSBlockQuarter_4291185814
 	partName = PartTapIn
-	pos = -1.17725146,28.9580269,-0.0232520197
+	pos = -1.17725146,29.5580273,-0.0232520197
 	attPos = 0,0,0
 	attPos0 = -1.2719568,-0.908718109,-0.000528039411
 	rot = 0.707106829,6.3220277E-08,6.3220277E-08,-0.707106829
@@ -16142,7 +16142,7 @@ PART
 {
 	part = RCSBlockQuarter_4291185740
 	partName = PartTapIn
-	pos = 0.0941776037,28.9580269,1.24923337
+	pos = 0.0941776037,29.5580273,1.24923337
 	attPos = 0,0,0
 	attPos0 = -0.000527851284,-0.908718109,1.27195692
 	rot = 0.50000006,-0.5,-0.5,-0.50000006
@@ -16362,7 +16362,7 @@ PART
 {
 	part = RCSBlockQuarter_4291185666
 	partName = PartTapIn
-	pos = 1.36666238,28.9580269,-0.022195816
+	pos = 1.36666238,29.5580273,-0.022195816
 	attPos = 0,0,0
 	attPos0 = 1.2719568,-0.908718109,0.000527886674
 	rot = 6.3220277E-08,-0.707106829,-0.707106829,-6.3220277E-08
@@ -16582,7 +16582,7 @@ PART
 {
 	part = KzProcFairingConeEgg_4292065576
 	partName = PartTapIn
-	pos = 1.59470558,26.2357388,-0.0227236748
+	pos = 1.59470558,26.8357391,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 1.50000012,-0.224000931,0
 	rot = 0,0,0,1
@@ -16864,7 +16864,7 @@ PART
 {
 	part = KzProcFairingConeEgg_4291114656
 	partName = PartTapIn
-	pos = -1.40529466,26.2357388,-0.0227238052
+	pos = -1.40529466,26.8357391,-0.0227238052
 	attPos = 0,0,0
 	attPos0 = -1.50000012,-0.224000931,-1.3038516E-07
 	rot = 0,1,0,-4.37113883E-08
@@ -17146,7 +17146,7 @@ PART
 {
 	part = KzInterstageAdapter2_4285411810
 	partName = PartTapIn
-	pos = 0.0947054476,16.788723,-0.0227236748
+	pos = 0.0947054476,17.3887234,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 0,-6.1000061,0
 	rot = 0,0,0,1
@@ -17430,7 +17430,7 @@ PART
 {
 	part = proceduralAvionics_4285411560
 	partName = PartTapIn
-	pos = 0.0947054476,17.3942299,-0.0227236748
+	pos = 0.0947054476,17.9942284,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 0,1.14400482,0
 	rot = 0,0,0,1
@@ -18130,7 +18130,7 @@ PART
 {
 	part = RFTank-III_4285124884
 	partName = PartTapIn
-	pos = 0.0947054476,9.78871918,-0.0227236748
+	pos = 0.0947054476,10.3887196,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 0,-7.00000381,0
 	rot = 0,0,0,1
@@ -19030,7 +19030,7 @@ PART
 {
 	part = launchClamp1_4285124808
 	partName = PartTapIn
-	pos = 0.0947058499,6.87704849,-2.32900429
+	pos = 0.0947058499,7.47704887,-2.32900429
 	attPos = 0,0,0
 	attPos0 = -1.96275323E-07,-2.91166878,-2.30628037
 	rot = 0,-4.03987706E-08,0,-1
@@ -19065,8 +19065,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.92322612
-		height = 7.36798096
+		scaleFactor = 3.16127467
+		height = 7.96798134
 		stagingEnabled = True
 		towerRot = 0,1,0,8.41101553E-08
 		EVENTS
@@ -19273,7 +19273,7 @@ PART
 {
 	part = launchClamp1_4285124650
 	partName = PartTapIn
-	pos = 0.0947055966,6.87704849,2.28355694
+	pos = 0.0947055966,7.47704887,2.28355694
 	attPos = 0,0,0
 	attPos0 = 3.97896656E-07,-2.91166878,2.30628037
 	rot = 0,-1,0,8.41101553E-08
@@ -19308,8 +19308,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.92322612
-		height = 7.36798096
+		scaleFactor = 3.16127467
+		height = 7.96798134
 		stagingEnabled = True
 		towerRot = 0,-1.27821551E-07,0,1
 		EVENTS
@@ -19516,7 +19516,7 @@ PART
 {
 	part = rn.lr87.11_4285124492
 	partName = PartTapIn
-	pos = 0.094705686,2.38872337,-0.0227236748
+	pos = 0.094705686,2.98872375,-0.0227236748
 	attPos = 0,0.814271927,0
 	attPos0 = 0,-8.21427345,0
 	rot = 0,0,0,1
@@ -20768,7 +20768,7 @@ PART
 {
 	part = KzProcFairingFuselage2_4253644598
 	partName = PartTapIn
-	pos = -1.40529466,16.564724,-0.0227238052
+	pos = -1.40529466,17.1647224,-0.0227238052
 	attPos = 0,0,0
 	attPos0 = -1.50000012,-0.223999023,-1.31316483E-07
 	rot = 0,0,0,1
@@ -21028,7 +21028,7 @@ PART
 {
 	part = KzProcFairingFuselage2_4252176694
 	partName = PartTapIn
-	pos = 1.59470558,16.564724,-0.0227236748
+	pos = 1.59470558,17.1647224,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 1.50000012,-0.223999023,0
 	rot = 0,1,0,-4.37113883E-08
@@ -21288,7 +21288,7 @@ PART
 {
 	part = RFSM-III_4292736602
 	partName = PartTapIn
-	pos = 0.0947054476,31.1377583,-0.0227236748
+	pos = 0.0947054476,31.7377586,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 0,0.550010681,0
 	rot = 0,0,0,1
@@ -22313,8 +22313,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 1000
-			maxAmount = 1000
+			amount = 0
+			maxAmount = 0
 		}
 		TANK
 		{
@@ -22327,8 +22327,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 0
-			maxAmount = 0
+			amount = 1000
+			maxAmount = 1000
 		}
 		TANK
 		{
@@ -22450,7 +22450,7 @@ PART
 	}
 	RESOURCE
 	{
-		name = ComSatPayload
+		name = WeatherSatPayload
 		amount = 1000
 		maxAmount = 1000
 		flowState = True
@@ -22464,7 +22464,7 @@ PART
 {
 	part = longAntenna_4291238158
 	partName = PartTapIn
-	pos = 0.0947054476,31.387764,-0.0227236748
+	pos = 0.0947054476,31.9877644,-0.0227236748
 	attPos = 0,0,0
 	attPos0 = 0,0.500005722,0
 	rot = 0,0,0,1
